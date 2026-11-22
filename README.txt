@@ -1,11 +1,7 @@
-RETO Website – erster Prototyp
+RETO Website v2 – Startseite, Epigenetik-Coaching, Lebenskompass
 
-Dateien:
-- index.html: neue Startseite
-- epigenetik.html: Epigenetik-Coaching
-- style.css: Design Natur & Gesundheit
-- script.js: mobiles Menü und Jahreszahl
-
-Start: index.html im Browser öffnen. Alle Dateien im gleichen Ordner lassen.
-Veröffentlichung: Dateien in das Webhosting-Verzeichnis hochladen. Vor Livegang Kontakt-E-Mail, Impressum, Datenschutzerklärung, konkrete Angebote und Qualifikationsangaben prüfen. Die aktuell verwendete E-Mail-Adresse ist als Platzhalter zu verifizieren.
-Noch nicht implementiert: echtes Buchungssystem, Mitgliederbereich, Admin-Bereich und Zahlungsfunktion.
+Alle Dateien in das Hauptverzeichnis des GitHub-Repositories hochladen (bestehende Dateien ersetzen).
+Render Static Site: Build Command echo "Static site ready"; Publish Directory .
+Neu: lebenskompass.html und lebenskompass.js.
+Der Lebenskompass speichert Check-ins nur im localStorage des jeweiligen Browsers. Keine Synchronisierung zwischen Geräten, kein Login, keine medizinische Auswertung.
+Vor Veröffentlichung: Kontaktadresse, Impressum, Datenschutzhinweise und Qualifikationen prüfen.
