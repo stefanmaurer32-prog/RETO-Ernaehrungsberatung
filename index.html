@@ -4,43 +4,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="RETO Ernährungsberatung – Ernährung, Epigenetik, Lebenskompass, Meditation und Coaching.">
-<title>RETO – Ernährung, Epigenetik & Coaching</title>
-
+<meta name="description" content="RETO Ernährungsberatung – Ernährung, Epigenetik, Meditation und Coaching.">
+<title>RETO | Ernährung, Epigenetik & Coaching</title>
 <style>
 :root {
   --green:#286b4e;
-  --green-dark:#1d503a;
   --dark:#203c31;
-  --sage:#e0ebdc;
   --cream:#f8f5ed;
+  --sage:#e0ebdc;
   --text:#52665b;
   --line:#dce5dc;
 }
-
 * {box-sizing:border-box}
 html {scroll-behavior:smooth}
 body {
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
   color:var(--dark);
-  background:white;
   line-height:1.6;
 }
-section {scroll-margin-top:125px}
 a {color:var(--green)}
-h1,h2,h3 {line-height:1.2}
-h2 {font-size:clamp(28px,3vw,40px)}
 p {color:var(--text)}
+h1,h2,h3 {line-height:1.2}
+h2 {font-size:clamp(27px,3vw,40px)}
+section {scroll-margin-top:120px}
 .hidden {display:none!important}
 
 header {
   position:sticky;
   top:0;
-  z-index:50;
-  background:rgba(255,255,255,.96);
+  z-index:20;
+  background:#fffffff2;
   border-bottom:1px solid var(--line);
-  backdrop-filter:blur(12px);
 }
 nav {
   max-width:1200px;
@@ -54,28 +49,25 @@ nav {
 .logo {
   font-size:28px;
   font-weight:900;
-  color:var(--green);
   text-decoration:none;
 }
 .navlinks {
   display:flex;
   flex-wrap:wrap;
   align-items:center;
-  gap:15px;
+  gap:14px;
 }
 .navlinks a {
+  text-decoration:none;
   font-size:14px;
   font-weight:700;
-  text-decoration:none;
 }
-.mein-reto-btn {
+.member-button {
   background:var(--green);
   color:white!important;
-  padding:11px 17px;
   border-radius:10px;
+  padding:11px 17px;
 }
-.mein-reto-btn:hover {background:var(--green-dark)}
-
 .container {
   max-width:1150px;
   margin:auto;
@@ -84,55 +76,41 @@ nav {
 .soft {background:var(--cream)}
 .eyebrow {
   font-size:13px;
-  letter-spacing:2px;
   font-weight:800;
+  letter-spacing:2px;
   color:var(--green);
 }
 .hero {
-  background:linear-gradient(
-    120deg,#e0ebdc 0%,#f8f5ed 60%,#e8f1e7 100%
-  );
-  text-align:center;
   padding:95px 25px;
+  text-align:center;
+  background:linear-gradient(120deg,#e0ebdc,#f8f5ed,#e8f1e7);
 }
 .hero-inner {max-width:850px;margin:auto}
 .hero h1 {
   font-size:clamp(35px,5vw,62px);
-  line-height:1.15;
   margin:25px 0;
 }
-.hero h1 span {
-  color:#347a55;
-  display:block;
-}
-.hero p {
-  font-size:19px;
-  max-width:700px;
-  margin:auto;
-}
+.hero h1 span {display:block;color:var(--green)}
+.hero p {font-size:19px}
 .buttons {
   display:flex;
-  flex-wrap:wrap;
   justify-content:center;
+  flex-wrap:wrap;
   gap:15px;
   margin:30px 0;
 }
 .btn,button {
   display:inline-block;
-  border:0;
-  border-radius:12px;
   background:var(--green);
   color:white;
   padding:15px 22px;
-  font-size:15px;
-  font-weight:700;
-  text-decoration:none;
+  border:0;
+  border-radius:12px;
+  font:700 15px Arial,sans-serif;
   cursor:pointer;
-  font-family:inherit;
+  text-decoration:none;
 }
-.btn:hover,button:hover {
-  background:var(--green-dark);
-}
+.btn:hover,button:hover {background:#1d503a}
 .btn-outline {
   background:transparent;
   color:var(--green);
@@ -142,10 +120,7 @@ nav {
   background:var(--sage);
   color:var(--green);
 }
-button:disabled {
-  opacity:.5;
-  cursor:not-allowed;
-}
+button:disabled {opacity:.5;cursor:not-allowed}
 .grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -155,109 +130,70 @@ button:disabled {
 .card {
   background:white;
   border:1px solid var(--line);
-  border-radius:18px;
   padding:26px;
-  box-shadow:0 6px 24px #173b2610;
+  border-radius:18px;
   margin-bottom:20px;
+  box-shadow:0 6px 24px #173b2610;
 }
-.card h3 {margin-top:0}
-label {
-  display:block;
-  font-weight:700;
-  margin:15px 0 6px;
-}
+label {display:block;font-weight:700;margin:15px 0 6px}
 input,select,textarea {
   width:100%;
   padding:12px;
+  font:inherit;
   border:1px solid #b9cbbc;
   border-radius:9px;
-  font:inherit;
-  background:white;
 }
-input[type="range"] {padding:0}
-input[type="checkbox"] {width:auto}
-.check {
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  font-weight:400;
-}
-.row {
-  display:flex;
-  flex-wrap:wrap;
-  gap:18px;
-}
-.row > div {flex:1;min-width:180px}
+input[type=range] {padding:0}
+input[type=checkbox] {width:auto}
+.check {display:flex;gap:10px;align-items:flex-start;font-weight:400}
+.row {display:flex;gap:18px;flex-wrap:wrap}
+.row>div {flex:1;min-width:180px}
 .result {
   background:var(--sage);
-  border-radius:14px;
   padding:22px;
+  border-radius:14px;
   margin:20px 0;
 }
-.small {
-  font-size:13px!important;
-  color:#60796a;
-}
-.notice {
-  border-left:4px solid var(--green);
-  background:#f0f6f0;
-  padding:15px;
-  border-radius:8px;
-}
-.bar {
-  height:14px;
-  background:#dce7de;
-  border-radius:20px;
-  overflow:hidden;
-}
-.bar-fill {
-  width:0;
-  height:100%;
-  background:var(--green);
-  transition:width .3s;
-}
+.small {font-size:13px!important;color:#60796a}
+.bar {height:14px;background:#dce7de;border-radius:20px;overflow:hidden}
+.bar-fill {height:100%;width:0;background:var(--green)}
+.notice {background:#edf5ec;padding:20px;border-left:4px solid var(--green)}
 footer {
   background:var(--dark);
-  color:white;
-  text-align:center;
   padding:35px 20px;
+  text-align:center;
+  color:white;
 }
 footer p {color:#d6e3da}
-
 @media(max-width:800px) {
-  nav {
-    flex-direction:column;
-    align-items:flex-start;
-  }
-  .navlinks {gap:11px}
+  nav {flex-direction:column;align-items:flex-start}
+  .navlinks {gap:10px}
   .hero {padding:65px 20px}
   .hero p {font-size:16px}
+  .container {padding:45px 18px}
   .buttons {flex-direction:column}
   .buttons .btn {width:100%}
-  .container {padding:45px 18px}
 }
 </style>
 </head>
-
 <body>
 
 <header>
 <nav>
-  <a class="logo" href="#start">RETO.</a>
-
+  <a href="#start" class="logo">RETO.</a>
   <div class="navlinks">
     <a href="#start">Start</a>
     <a href="#angebote">Angebote</a>
     <a href="#rechner">Gesundheitscheck</a>
-    <a href="#kompass" data-member-link>Lebenskompass</a>
-    <a href="#meditation" data-member-link>Meditation</a>
-    <a href="#ernaehrung">Ernährung</a>
+
+    <!-- Erst nach Registrierung sichtbar -->
+    <a href="#kompass" class="member-nav hidden">Lebenskompass</a>
+    <a href="#meditation" class="member-nav hidden">Meditation</a>
+    <a href="#ernaehrung" class="member-nav hidden">Ernährung</a>
+
     <a href="#speaker">Speaker</a>
     <a href="#buchung">Kontakt</a>
-
-    <a href="#mitgliedschaft"
-       id="meinRetoButton"
-       class="mein-reto-btn">
+    <a href="#mitgliedschaft" id="memberNavButton" class="member-button">
       🔒 Kostenlos registrieren
     </a>
   </div>
@@ -266,112 +202,82 @@ footer p {color:#d6e3da}
 
 <main>
 
-<!-- STARTSEITE -->
 <section id="start" class="hero">
-<div class="hero-inner">
-
-  <div class="eyebrow">
-    RETO · ERNÄHRUNG · EPIGENETIK · COACHING
+  <div class="hero-inner">
+    <div class="eyebrow">RETO · ERNÄHRUNG · EPIGENETIK · COACHING</div>
+    <h1>
+      Du kümmerst dich um alles.
+      <span>Aber wann kümmerst du dich um dich?</span>
+    </h1>
+    <p>
+      Deine Gesundheit beginnt mit den Entscheidungen,
+      die du heute triffst. Entdecke deinen persönlichen
+      Weg zu mehr Energie, Balance und Wohlbefinden.
+    </p>
+    <div class="buttons">
+      <a href="#rechner" class="btn">
+        Jetzt kostenlosen Gesundheitscheck starten →
+      </a>
+      <a href="#buchung" class="btn btn-outline">
+        Kostenloses Kennenlerngespräch vereinbaren
+      </a>
+    </div>
+    <p class="small">
+      ✓ Kostenloser Gesundheitscheck
+      ✓ Unverbindlich
+      ✓ Ergebnis nach kostenloser Demo-Registrierung
+    </p>
   </div>
-
-  <h1>
-    Du kümmerst dich um alles.
-    <span>Aber wann kümmerst du dich um dich?</span>
-  </h1>
-
-  <p>
-    Deine Gesundheit beginnt mit den Entscheidungen,
-    die du heute triffst.
-    Entdecke deinen persönlichen Weg zu mehr Energie,
-    Balance und Wohlbefinden.
-  </p>
-
-  <div class="buttons">
-    <a class="btn" href="#rechner">
-      Jetzt kostenlosen Gesundheitscheck starten →
-    </a>
-
-    <a class="btn btn-outline" href="#buchung">
-      Kostenloses Kennenlerngespräch vereinbaren
-    </a>
-  </div>
-
-  <p class="small">
-    ✓ Gesundheitscheck kostenlos &nbsp;
-    ✓ Unverbindlich<br>
-    ✓ Persönliche Auswertung nach kostenloser Demo-Registrierung
-  </p>
-
-</div>
 </section>
 
-<!-- ANGEBOTE -->
 <section id="angebote" class="container">
   <div class="eyebrow">DEIN WEG ZU MEHR WOHLBEFINDEN</div>
   <h2>Meine Angebote</h2>
-  <p>Individuelle Begleitung für einen bewussten Lebensstil.</p>
-
   <div class="grid">
     <article class="card">
       <h3>🥗 Ernährungsberatung</h3>
-      <p>Ernährung verstehen und alltagstaugliche Gewohnheiten entwickeln.</p>
+      <p>Alltagstaugliche Ernährung und neue Gewohnheiten entdecken.</p>
       <a href="#buchung">Beratung anfragen →</a>
     </article>
-
     <article class="card">
       <h3>🧬 Epigenetik-Coaching</h3>
-      <p>Zusammenhänge zwischen Ernährung, Schlaf, Stress und Genregulation kennenlernen.</p>
+      <p>Zusammenhänge zwischen Lebensstil und Genregulation verstehen.</p>
       <a href="#epigenetik">Mehr erfahren →</a>
     </article>
-
     <article class="card">
       <h3>🧘 Meditation</h3>
-      <p>Bewusste Pausen und Achtsamkeitsübungen für deinen Alltag.</p>
-      <a href="#meditation" data-member-link>Jetzt entdecken →</a>
+      <p>Bewusste Pausen für mehr Ruhe und Achtsamkeit.</p>
+      <a href="#mitgliedschaft">Kostenlos freischalten →</a>
     </article>
-
     <article class="card">
       <h3>💚 Persönliches Coaching</h3>
-      <p>Individuelle Ziele definieren und neue Routinen entwickeln.</p>
-      <a href="#coaching">Mehr erfahren →</a>
+      <p>Individuelle Ziele setzen und neue Routinen entwickeln.</p>
+      <a href="#buchung">Coaching anfragen →</a>
     </article>
   </div>
 </section>
 
-<!-- GESUNDHEITSCHECK -->
 <section id="rechner" class="soft">
 <div class="container">
-
-  <div class="eyebrow">DEIN KOSTENLOSER CHECK</div>
-  <h2>Deine persönlichen Gesundheits-Richtwerte</h2>
-
-  <p>
-    Gib deine Daten ein und erhalte nach der kostenlosen
-    Registrierung deine Auswertung.
-  </p>
+  <div class="eyebrow">KOSTENLOSER GESUNDHEITSCHECK</div>
+  <h2>Entdecke deine persönlichen Richtwerte</h2>
+  <p>Gib deine Daten ein. Deine Auswertung wird nach der kostenlosen Registrierung angezeigt.</p>
 
   <form id="healthForm" class="card">
-
     <div class="row">
       <div>
         <label for="age">Alter</label>
-        <input id="age" type="number"
-               min="18" max="120" required>
+        <input id="age" type="number" min="18" max="120" required>
       </div>
-
       <div>
-        <label for="height">Grösse in cm</label>
-        <input id="height" type="number"
-               min="100" max="250" required>
+        <label for="height">Grösse (cm)</label>
+        <input id="height" type="number" min="100" max="250" required>
       </div>
-
       <div>
-        <label for="weight">Gewicht in kg</label>
-        <input id="weight" type="number"
-               min="25" max="350" step="0.1" required>
+        <label for="weight">Gewicht (kg)</label>
+        <input id="weight" type="number" min="25" max="350" step="0.1" required>
       </div>
     </div>
-
     <div class="row">
       <div>
         <label for="sex">Berechnungsformel</label>
@@ -380,9 +286,8 @@ footer p {color:#d6e3da}
           <option value="male">Männliche Formel</option>
         </select>
       </div>
-
       <div>
-        <label for="activity">Aktivitätsniveau</label>
+        <label for="activity">Aktivität</label>
         <select id="activity">
           <option value="1.2">Wenig Bewegung</option>
           <option value="1.375">Leicht aktiv</option>
@@ -391,509 +296,219 @@ footer p {color:#d6e3da}
         </select>
       </div>
     </div>
-
-    <p class="small">
-      Die Berechnungen sind Schätzungen für Erwachsene
-      und keine medizinische Diagnose.
-    </p>
-
-    <button type="submit">
-      Gesundheitscheck auswerten →
-    </button>
-
+    <p class="small">Allgemeine Schätzwerte für Erwachsene, keine medizinische Diagnose.</p>
+    <button type="submit">Gesundheitscheck auswerten →</button>
   </form>
 
-  <div id="healthRegistrationNotice"
-       class="notice hidden">
+  <div id="healthGate" class="notice hidden">
     <h3>🔒 Deine Auswertung ist bereit</h3>
-    <p>
-      Registriere dich kostenlos, um deine Ergebnisse
-      und den RETO Mitgliederbereich freizuschalten.
-    </p>
-    <a class="btn" href="#mitgliedschaft">
-      Jetzt kostenlos registrieren →
-    </a>
+    <p>Registriere dich kostenlos, um dein Ergebnis zu sehen.</p>
+    <a href="#mitgliedschaft" class="btn">Jetzt kostenlos registrieren →</a>
   </div>
 
-  <div id="healthResult"
-       class="result hidden"
-       aria-live="polite">
+  <div id="healthResult" class="result hidden" aria-live="polite">
     <h3>Deine persönliche Auswertung</h3>
     <div id="healthValues"></div>
-    <a class="btn" href="#kompass" data-member-link>
-      Weiter zum Lebenskompass →
-    </a>
+    <a href="#kompass" class="btn">Zum Lebenskompass →</a>
   </div>
-
 </div>
 </section>
 
-<!-- REGISTRIERUNG -->
+<!-- KOSTENLOSE DEMO-REGISTRIERUNG -->
 <section id="mitgliedschaft" class="container">
-
   <div id="memberGate" class="card">
-
-    <div class="eyebrow">KOSTENLOSER MITGLIEDERBEREICH</div>
-    <h2>Dein persönlicher RETO Bereich</h2>
-
-    <p>
-      Registriere dich kostenlos und schalte
-      deine persönlichen Wohlfühlfunktionen frei.
-    </p>
+    <div class="eyebrow">DEIN KOSTENLOSER RETO BEREICH</div>
+    <h2>Mehr Wohlbefinden beginnt hier</h2>
+    <p>Registriere dich kostenlos und schalte deine persönlichen Funktionen frei.</p>
 
     <div class="grid">
-      <div>
-        <h3>🧭 Lebenskompass</h3>
-        <p>Tägliche Check-ins und Verlaufsübersicht.</p>
-      </div>
-      <div>
-        <h3>🧘 Meditationen</h3>
-        <p>Atemübungen und bewusste Entspannung.</p>
-      </div>
-      <div>
-        <h3>💚 Persönliche Impulse</h3>
-        <p>Passende Anregungen für deinen Alltag.</p>
-      </div>
+      <div><h3>🧭 Lebenskompass</h3><p>Tägliche Check-ins und Verlauf.</p></div>
+      <div><h3>🧘 Meditation</h3><p>Atemübungen und Entspannung.</p></div>
+      <div><h3>🥗 Ernährungsplaner</h3><p>Menüideen inklusive Keto.</p></div>
     </div>
 
-    <h3>Kostenlos registrieren</h3>
-
-    <form id="memberRegisterForm">
-
+    <form id="memberForm">
       <label for="memberName">Vorname</label>
-      <input id="memberName"
-             maxlength="80"
-             autocomplete="given-name"
-             required>
+      <input id="memberName" maxlength="80" required>
 
       <label for="memberEmail">E-Mail-Adresse</label>
-      <input id="memberEmail"
-             type="email"
-             autocomplete="email"
-             required>
+      <input id="memberEmail" type="email" required>
 
       <label class="check">
-        <input id="memberConsent"
-               type="checkbox"
-               required>
-        Ich verstehe, dass dies eine lokale
-        Testregistrierung ohne echtes Benutzerkonto ist.
+        <input type="checkbox" required>
+        Ich verstehe, dass dies eine lokale Demo-Registrierung ohne echtes Benutzerkonto ist.
       </label>
 
-      <button type="submit">
-        Jetzt kostenlos freischalten →
-      </button>
-
+      <button type="submit">Jetzt kostenlos freischalten →</button>
     </form>
-
-    <p class="small">
-      Keine Kreditkarte erforderlich.
-      Die Registrierung wird nicht an einen Server übertragen.
-      Es wird keine E-Mail versendet.
-    </p>
-
+    <p class="small">Keine Kreditkarte, kein E-Mail-Versand und keine Server-Registrierung.</p>
   </div>
 
   <div id="memberWelcome" class="result hidden">
-
-    <h2 id="welcomeTitle">
-      Willkommen bei RETO!
-    </h2>
-
-    <p>
-      Dein lokaler Demo-Mitgliederbereich ist freigeschaltet.
-    </p>
-
+    <h2 id="welcomeTitle">Willkommen bei RETO!</h2>
+    <p>Deine Funktionen sind in diesem Browser freigeschaltet.</p>
     <div class="buttons">
-      <a class="btn" href="#kompass">
-        🧭 Lebenskompass öffnen
-      </a>
-
-      <a class="btn btn-outline" href="#meditation">
-        🧘 Meditation starten
-      </a>
+      <a href="#kompass" class="btn">🧭 Lebenskompass</a>
+      <a href="#meditation" class="btn">🧘 Meditation</a>
+      <a href="#ernaehrung" class="btn">🥗 Ernährungsplaner</a>
     </div>
-
-    <button type="button" id="memberLogout">
-      Demo-Zugang zurücksetzen
-    </button>
-
+    <button type="button" id="logoutButton">Demo-Zugang zurücksetzen</button>
   </div>
-
 </section>
 
-<!-- LEBENSKOMPASS -->
+<!-- GESCHÜTZTER LEBENSKOMPASS -->
 <section id="kompass" class="container member-only hidden">
-
   <div class="eyebrow">DEIN TÄGLICHER BEGLEITER</div>
   <h2>RETO Lebenskompass</h2>
-
-  <p>
-    Wie geht es dir heute?
-    Halte deine Werte fest und beobachte deine Entwicklung.
-  </p>
+  <p>Wie geht es dir heute? Halte deine Werte fest und beobachte deinen Verlauf.</p>
 
   <form id="compassForm" class="card">
+    <label for="energy">Energie: <output id="energyOut">5</output>/10</label>
+    <input id="energy" type="range" min="1" max="10" value="5">
 
-    <label for="energy">
-      Energie: <output id="energyOut">5</output>/10
-    </label>
-    <input id="energy" type="range"
-           min="1" max="10" value="5">
+    <label for="stress">Stress: <output id="stressOut">5</output>/10</label>
+    <input id="stress" type="range" min="1" max="10" value="5">
 
-    <label for="stress">
-      Stress: <output id="stressOut">5</output>/10
-    </label>
-    <input id="stress" type="range"
-           min="1" max="10" value="5">
+    <label for="mood">Stimmung: <output id="moodOut">5</output>/10</label>
+    <input id="mood" type="range" min="1" max="10" value="5">
 
-    <label for="mood">
-      Stimmung: <output id="moodOut">5</output>/10
-    </label>
-    <input id="mood" type="range"
-           min="1" max="10" value="5">
+    <label for="sleep">Schlafdauer (Stunden)</label>
+    <input id="sleep" type="number" min="0" max="24" step="0.5" value="7" required>
 
-    <label for="sleep">Schlafdauer in Stunden</label>
-    <input id="sleep" type="number"
-           min="0" max="24" step="0.5"
-           value="7" required>
-
-    <label for="movement">Bewegung in Minuten</label>
-    <input id="movement" type="number"
-           min="0" max="1440"
-           value="20" required>
+    <label for="movement">Bewegung (Minuten)</label>
+    <input id="movement" type="number" min="0" max="1440" value="20" required>
 
     <label for="notes">Persönliche Notiz</label>
     <textarea id="notes" rows="3"></textarea>
 
-    <button type="submit">
-      Heutigen Check-in speichern
-    </button>
-
+    <button type="submit">Heutigen Check-in speichern</button>
   </form>
 
-  <div id="dailyTip"
-       class="result hidden"
-       aria-live="polite"></div>
+  <div id="dailyTip" class="result hidden" aria-live="polite"></div>
 
   <div class="card">
     <h3>Dein Verlauf</h3>
-
-    <p id="progressText">
-      Noch keine Check-ins vorhanden.
-    </p>
-
-    <div class="bar">
-      <div id="progressBar" class="bar-fill"></div>
-    </div>
-
+    <p id="progressText">Noch keine Check-ins vorhanden.</p>
+    <div class="bar"><div id="progressBar" class="bar-fill"></div></div>
     <div id="history"></div>
-
-    <button type="button" id="clearCompass">
-      Verlauf löschen
-    </button>
+    <button type="button" id="clearCompass">Verlauf löschen</button>
   </div>
-
 </section>
 
-<!-- MEDITATION -->
+<!-- GESCHÜTZTE MEDITATION -->
 <section id="meditation" class="soft member-only hidden">
 <div class="container">
-
-  <div class="eyebrow">NUR FÜR RETO MITGLIEDER</div>
+  <div class="eyebrow">RETO MITGLIEDERBEREICH</div>
   <h2>Meditation & Achtsamkeit</h2>
-
-  <p>
-    Schenke dir einen Moment Ruhe.
-    Diese Übungen stehen nach der kostenlosen
-    Registrierung zur Verfügung.
-  </p>
-
+  <p>Gönne dir einen bewussten Moment der Ruhe.</p>
   <div class="grid">
-
     <div class="card">
       <h3>🌿 Ruhiger Atem</h3>
-      <p>Eine einminütige Atemübung.</p>
-
-      <button type="button" id="breathButton">
-        Atemübung starten
-      </button>
-
-      <div id="breathText"
-           class="result hidden"
-           aria-live="polite"></div>
+      <p>Eine kurze Atemübung über 60 Sekunden.</p>
+      <button type="button" id="breathButton">Atemübung starten</button>
+      <div id="breathText" class="result hidden" aria-live="polite"></div>
     </div>
-
     <div class="card">
       <h3>🌙 Abendruhe</h3>
-      <p>Ein kurzer Impuls zum Abschalten.</p>
-
-      <button type="button" id="eveningButton">
-        Abendimpuls anzeigen
-      </button>
-
-      <div id="eveningText"
-           class="result hidden"></div>
+      <p>Ein Impuls zum bewussten Abschalten.</p>
+      <button type="button" id="eveningButton">Abendimpuls anzeigen</button>
+      <div id="eveningText" class="result hidden"></div>
     </div>
-
   </div>
-
 </div>
 </section>
 
-<!-- ERNÄHRUNGSPLANER -->
-<section id="ernaehrung" class="container">
-
+<!-- GESCHÜTZTER ERNÄHRUNGSPLANER -->
+<section id="ernaehrung" class="container member-only hidden">
+  <div class="eyebrow">RETO MITGLIEDERBEREICH</div>
   <h2>Intelligenter Ernährungsplaner</h2>
-
-  <p>
-    Entdecke Menüideen passend zu deiner
-    bevorzugten Ernährungsform.
-  </p>
+  <p>Entdecke Menüideen passend zu deiner Ernährungsform.</p>
 
   <div class="card">
-
     <label for="diet">Ernährungsform</label>
-
     <select id="diet">
       <option value="balanced">Ausgewogen</option>
       <option value="vegetarian">Vegetarisch</option>
       <option value="vegan">Vegan</option>
       <option value="keto">Keto</option>
     </select>
-
-    <button type="button" id="mealButton">
-      Menüideen erstellen
-    </button>
-
-    <div id="mealResult"
-         class="result hidden"></div>
-
+    <button type="button" id="mealButton">Menüideen erstellen</button>
+    <div id="mealResult" class="result hidden"></div>
   </div>
-
-  <p class="small">
-    Allgemeine Menüideen ohne Berücksichtigung
-    individueller Allergien oder Erkrankungen.
-  </p>
-
+  <p class="small">Die Menüideen berücksichtigen keine individuellen Allergien oder Erkrankungen.</p>
 </section>
 
-<!-- EPIGENETIK -->
 <section id="epigenetik" class="soft">
 <div class="container">
-
   <div class="eyebrow">WISSEN VERSTEHEN</div>
   <h2>Epigenetik-Wissenswelt</h2>
-
-  <p>
-    Die Epigenetik untersucht unter anderem,
-    wie die Aktivität von Genen reguliert wird,
-    ohne die DNA-Sequenz zu verändern.
-  </p>
-
+  <p>Epigenetik untersucht, wie die Aktivität von Genen reguliert wird, ohne die DNA-Sequenz zu verändern.</p>
   <div class="grid">
-
-    <div class="card">
-      <h3>🥗 Ernährung</h3>
-      <p>
-        Welche Zusammenhänge zwischen Nährstoffen
-        und epigenetischen Prozessen werden erforscht?
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>🌙 Schlaf</h3>
-      <p>
-        Welche Rolle spielen biologische Rhythmen
-        für den menschlichen Organismus?
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>🧘 Stress</h3>
-      <p>
-        Wie erforscht die Wissenschaft den Einfluss
-        von Stress auf biologische Regulationsprozesse?
-      </p>
-    </div>
-
+    <div class="card"><h3>🥗 Ernährung</h3><p>Zusammenhänge zwischen Nährstoffen und Genregulation.</p></div>
+    <div class="card"><h3>🌙 Schlaf</h3><p>Biologische Rhythmen und ihre Bedeutung.</p></div>
+    <div class="card"><h3>🧘 Stress</h3><p>Forschung zu Stress und biologischen Regulationsprozessen.</p></div>
   </div>
-
 </div>
 </section>
 
-<!-- COACHING -->
 <section id="coaching" class="container">
-
   <h2>Digitaler Coaching-Begleiter</h2>
-
-  <p>
-    Setze dir ein persönliches Ziel und
-    halte es für deinen Alltag fest.
-  </p>
-
+  <p>Setze dir ein persönliches Ziel.</p>
   <div class="card">
-
-    <label for="goal">Mein persönliches Ziel</label>
-
-    <input id="goal"
-           maxlength="300"
-           placeholder="z.B. täglich 20 Minuten spazieren">
-
-    <button type="button" id="saveGoal">
-      Ziel speichern
-    </button>
-
+    <label for="goal">Mein Ziel</label>
+    <input id="goal" maxlength="300" placeholder="z.B. täglich 20 Minuten spazieren">
+    <button type="button" id="saveGoal">Ziel speichern</button>
     <p id="goalDisplay"></p>
-
   </div>
-
 </section>
 
-<!-- CHALLENGES -->
 <section id="challenges" class="soft">
 <div class="container">
-
   <h2>RETO Challenges</h2>
-
-  <p>
-    Starte deine persönliche
-    30-Tage-Wohlfühlchallenge.
-  </p>
-
   <div class="card">
-
     <h3>30 Tage für dich</h3>
-
-    <p>
-      Jeden Tag eine kleine Aufgabe für
-      mehr Achtsamkeit und gesunde Gewohnheiten.
-    </p>
-
+    <p>Jeden Tag eine kleine Aufgabe für mehr Achtsamkeit.</p>
     <p id="challengeProgress"></p>
-
-    <button type="button" id="challengeButton">
-      Heutige Aufgabe erledigt
-    </button>
-
-    <p class="small">
-      Diese Challenge wird nur lokal gespeichert.
-      Eine echte Community benötigt später
-      eine Datenbank und Benutzerkonten.
-    </p>
-
+    <button type="button" id="challengeButton">Heutige Aufgabe erledigt</button>
+    <p class="small">Lokale Einzel-Challenge, noch keine echte Community.</p>
   </div>
-
 </div>
 </section>
 
-<!-- SPEAKER -->
 <section id="speaker" class="container">
-
   <div class="eyebrow">VORTRÄGE & WORKSHOPS</div>
-
   <h2>Reto als Speaker</h2>
-
-  <p>
-    <strong>
-      Dipl. Ernährungsberater · Speaker ·
-      Zertifizierter Epigenetik-Coach
-    </strong>
-  </p>
-
-  <p>
-    Ich möchte Menschen inspirieren,
-    Gesundheit bewusster zu gestalten und
-    Zusammenhänge zwischen Ernährung,
-    Lebensstil und Wohlbefinden zu verstehen.
-  </p>
-
+  <p><strong>Dipl. Ernährungsberater · Speaker · Zertifizierter Epigenetik-Coach</strong></p>
+  <p>Ich möchte Menschen inspirieren, Gesundheit bewusster zu gestalten und Zusammenhänge zwischen Ernährung, Lebensstil und Wohlbefinden zu verstehen.</p>
   <div class="card">
-
-    <h3>20-Sekunden-Speaker-Probe</h3>
-
+    <h3>Speaker-Probe</h3>
     <p id="speakerText">
-      Wusstest du, dass dein Lebensstil beeinflussen kann,
-      wie deine Gene reguliert werden?
-      Ich bin Reto, diplomierter Ernährungsberater,
-      Speaker und zertifizierter Epigenetik-Coach.
-      In meinen Vorträgen zeige ich dir,
-      wie Ernährung, Bewegung und bewusste Entscheidungen
+      Wusstest du, dass dein Lebensstil beeinflussen kann, wie deine Gene reguliert werden?
+      Ich bin Reto, diplomierter Ernährungsberater, Speaker und zertifizierter Epigenetik-Coach.
+      In meinen Vorträgen zeige ich dir, wie Ernährung, Bewegung und bewusste Entscheidungen
       zu mehr Wohlbefinden beitragen können.
-      Denn Gesundheit beginnt mit Wissen –
-      und mit dem ersten Schritt!
     </p>
-
-    <button type="button" id="speakButton">
-      Text vorlesen
-    </button>
-
-    <button type="button" id="stopSpeak">
-      Stoppen
-    </button>
-
-    <p class="small">
-      Die Vorlesefunktion verwendet eine
-      verfügbare Browserstimme.
-    </p>
-
+    <button type="button" id="speakButton">Text vorlesen</button>
+    <button type="button" id="stopSpeak">Stoppen</button>
   </div>
-
-  <a class="btn" href="#buchung">
-    Reto als Speaker anfragen →
-  </a>
-
+  <a href="#buchung" class="btn">Speaker-Anfrage stellen →</a>
 </section>
 
-<!-- ÜBER MICH -->
 <section id="ueber" class="soft">
 <div class="container">
-
   <h2>Über mich – Reto</h2>
-
-  <p>
-    <strong>
-      Dipl. Ernährungsberater, Speaker und
-      zertifizierter Epigenetik-Coach.
-    </strong>
-  </p>
-
-  <p>
-    Meine Leidenschaft ist es,
-    Menschen auf ihrem Weg zu mehr Gesundheit,
-    Bewusstsein und Lebensqualität zu begleiten.
-  </p>
-
-  <p>
-    Ich verbinde Ernährungswissen mit einem
-    ganzheitlichen Blick auf Bewegung,
-    Schlaf, Stress und persönliche Gewohnheiten.
-  </p>
-
-  <p>
-    <strong>Meine Philosophie:</strong>
-    Es geht nicht darum, perfekt zu sein.
-    Es geht darum, jeden Tag einen bewussten
-    Schritt für sich selbst zu machen.
-  </p>
-
+  <p><strong>Dipl. Ernährungsberater, Speaker und zertifizierter Epigenetik-Coach.</strong></p>
+  <p>Meine Leidenschaft ist es, Menschen auf ihrem Weg zu mehr Gesundheit, Bewusstsein und Lebensqualität zu begleiten.</p>
+  <p>Ich verbinde Ernährungswissen mit einem ganzheitlichen Blick auf Bewegung, Schlaf, Stress und persönliche Gewohnheiten.</p>
+  <p><strong>Meine Philosophie:</strong> Es geht nicht darum, perfekt zu sein. Es geht darum, jeden Tag einen bewussten Schritt für sich selbst zu machen.</p>
 </div>
 </section>
 
-<!-- KONTAKT -->
 <section id="buchung" class="container">
-
-  <div class="eyebrow">JETZT KONTAKT AUFNEHMEN</div>
-
+  <div class="eyebrow">KONTAKT</div>
   <h2>Dein erster Schritt beginnt hier</h2>
-
-  <p>
-    Frage ein kostenloses Kennenlerngespräch,
-    eine Beratung oder einen Vortrag an.
-  </p>
-
+  <p>Frage ein kostenloses Kennenlerngespräch oder eine Beratung an.</p>
   <form id="bookingForm" class="card">
-
     <label for="bookName">Name</label>
     <input id="bookName" required>
 
@@ -901,7 +516,6 @@ footer p {color:#d6e3da}
     <input id="bookEmail" type="email" required>
 
     <label for="bookService">Angebot</label>
-
     <select id="bookService">
       <option>Kostenloses Kennenlerngespräch</option>
       <option>Ernährungsberatung</option>
@@ -911,36 +525,17 @@ footer p {color:#d6e3da}
     </select>
 
     <label for="bookMessage">Nachricht</label>
+    <textarea id="bookMessage" rows="4"></textarea>
 
-    <textarea id="bookMessage"
-              rows="4"
-              placeholder="Deine Anfrage"></textarea>
-
-    <button type="submit">
-      Anfrage vorbereiten →
-    </button>
-
-    <p class="small">
-      Testversion: Es wird noch keine Nachricht
-      versendet und kein Termin reserviert.
-    </p>
-
+    <button type="submit">Anfrage vorbereiten →</button>
+    <p class="small">Demo: Es wird noch keine Nachricht versendet und kein Termin reserviert.</p>
   </form>
 
   <div id="bookingResult" class="result hidden">
-
     <h3>Deine vorbereitete Anfrage</h3>
-
-    <textarea id="bookingCopy"
-              rows="8"
-              readonly></textarea>
-
-    <button type="button" id="copyBooking">
-      Anfrage kopieren
-    </button>
-
+    <textarea id="bookingCopy" rows="8" readonly></textarea>
+    <button type="button" id="copyBooking">Anfrage kopieren</button>
   </div>
-
 </section>
 
 </main>
@@ -954,315 +549,221 @@ footer p {color:#d6e3da}
 <script>
 "use strict";
 
-/* GRUNDFUNKTIONEN */
-
 const $ = id => document.getElementById(id);
-const KEY = "reto_demo_v2_";
+const KEY = "reto_demo_v3_";
+const protectedIds = ["kompass","meditation","ernaehrung"];
 
-function read(key, fallback) {
+function read(key,fallback) {
   try {
-    const raw = localStorage.getItem(KEY + key);
-    return raw === null ? fallback : JSON.parse(raw);
+    const value=localStorage.getItem(KEY+key);
+    return value===null ? fallback : JSON.parse(value);
   } catch {
     return fallback;
   }
 }
 
-function save(key, value) {
+function save(key,value) {
   try {
-    localStorage.setItem(KEY + key, JSON.stringify(value));
+    localStorage.setItem(KEY+key,JSON.stringify(value));
     return true;
   } catch {
-    alert("Lokale Speicherung nicht verfügbar.");
+    alert("Die lokale Speicherung ist nicht verfügbar.");
     return false;
   }
 }
 
 function today() {
-  const d = new Date();
-
+  const d=new Date();
   return [
     d.getFullYear(),
-    String(d.getMonth() + 1).padStart(2, "0"),
-    String(d.getDate()).padStart(2, "0")
+    String(d.getMonth()+1).padStart(2,"0"),
+    String(d.getDate()).padStart(2,"0")
   ].join("-");
 }
 
-function setText(id, value) {
-  $(id).textContent = value;
-}
-
-$("year").textContent = new Date().getFullYear();
-
-/* MITGLIEDERBEREICH */
-
 function isMember() {
-  return read("registered", false) === true;
+  return read("registered",false)===true;
 }
+
+function setText(id,value) {
+  $(id).textContent=value;
+}
+
+/* REGISTRIERUNG UND NAVIGATION */
 
 function updateMemberAccess() {
-  const registered = isMember();
+  const member=isMember();
 
   document.querySelectorAll(".member-only")
-    .forEach(section => {
-      section.classList.toggle("hidden", !registered);
-    });
+    .forEach(el=>el.classList.toggle("hidden",!member));
 
-  $("memberGate").classList.toggle(
-    "hidden", registered
-  );
+  document.querySelectorAll(".member-nav")
+    .forEach(el=>el.classList.toggle("hidden",!member));
 
-  $("memberWelcome").classList.toggle(
-    "hidden", !registered
-  );
+  $("memberGate").classList.toggle("hidden",member);
+  $("memberWelcome").classList.toggle("hidden",!member);
 
-  const button = $("meinRetoButton");
+  $("memberNavButton").textContent=
+    member ? "💚 Mein RETO" : "🔒 Kostenlos registrieren";
 
-  if (registered) {
-    button.textContent = "💚 Mein RETO";
-    button.href = "#mitgliedschaft";
-  } else {
-    button.textContent = "🔒 Kostenlos registrieren";
-    button.href = "#mitgliedschaft";
-  }
-
-  const name = read("memberName", "");
-
-  setText(
-    "welcomeTitle",
-    name ? "Willkommen, " + name + "!" :
-           "Willkommen bei RETO!"
-  );
+  const name=read("memberName","");
+  setText("welcomeTitle",
+    name ? "Willkommen, "+name+"!" : "Willkommen bei RETO!");
 }
 
-$("memberRegisterForm").addEventListener(
-  "submit", function(e) {
-    e.preventDefault();
+function guardNavigation() {
+  const id=decodeURIComponent(location.hash.slice(1));
 
-    if (!this.reportValidity()) return;
-
-    const name = $("memberName").value.trim();
-
-    if (!name) return;
-
-    if (!save("registered", true)) return;
-
-    save("memberName", name);
-
-    updateMemberAccess();
-
-    if (pendingHealth) {
-      $("healthRegistrationNotice")
-        .classList.add("hidden");
-
-      showHealth(pendingHealth);
-    } else {
-      $("mitgliedschaft").scrollIntoView({
-        behavior:"smooth"
-      });
-    }
+  if(protectedIds.includes(id) && !isMember()) {
+    history.replaceState(null,"","#mitgliedschaft");
+    $("mitgliedschaft").scrollIntoView({behavior:"smooth"});
   }
-);
+}
 
-$("memberLogout").addEventListener("click", () => {
-  localStorage.removeItem(KEY + "registered");
-  localStorage.removeItem(KEY + "memberName");
+$("memberForm").addEventListener("submit",e=>{
+  e.preventDefault();
 
-  $("healthResult").classList.add("hidden");
+  const form=e.currentTarget;
+  if(!form.reportValidity())return;
+
+  const name=$("memberName").value.trim();
+  if(!name)return;
+
+  if(!save("registered",true))return;
+  save("memberName",name);
 
   updateMemberAccess();
 
-  $("mitgliedschaft").scrollIntoView({
-    behavior:"smooth"
-  });
+  if(pendingHealth) {
+    $("healthGate").classList.add("hidden");
+    showHealth(pendingHealth);
+  } else {
+    $("mitgliedschaft").scrollIntoView({behavior:"smooth"});
+  }
 });
 
-/* GESCHÜTZTE NAVIGATION */
+$("logoutButton").addEventListener("click",()=>{
+  localStorage.removeItem(KEY+"registered");
+  localStorage.removeItem(KEY+"memberName");
+  pendingHealth=null;
+  $("healthResult").classList.add("hidden");
 
-document.querySelectorAll("[data-member-link]")
-  .forEach(link => {
-    link.addEventListener("click", e => {
-      if (!isMember()) {
-        e.preventDefault();
+  updateMemberAccess();
+  history.replaceState(null,"","#mitgliedschaft");
+  $("mitgliedschaft").scrollIntoView({behavior:"smooth"});
+});
 
-        $("mitgliedschaft").scrollIntoView({
-          behavior:"smooth"
-        });
-      }
-    });
-  });
+window.addEventListener("hashchange",guardNavigation);
 
-function handleProtectedHash() {
-  const protectedHashes = [
-    "#kompass",
-    "#meditation"
-  ];
+/* GESUNDHEITSCHECK */
 
-  if (
-    protectedHashes.includes(location.hash) &&
-    !isMember()
-  ) {
-    $("mitgliedschaft").scrollIntoView({
-      behavior:"smooth"
-    });
-  }
-}
-
-window.addEventListener(
-  "hashchange", handleProtectedHash
-);
-
-/* GESUNDHEITSRECHNER */
-
-let pendingHealth = null;
+let pendingHealth=null;
 
 function calculateHealth() {
-  const age = Number($("age").value);
-  const height = Number($("height").value);
-  const weight = Number($("weight").value);
-  const factor = Number($("activity").value);
+  const age=Number($("age").value);
+  const height=Number($("height").value);
+  const weight=Number($("weight").value);
+  const factor=Number($("activity").value);
 
-  if (
-    age < 18 || age > 120 ||
-    height < 100 || height > 250 ||
-    weight < 25 || weight > 350
-  ) {
+  if(
+    age<18 || age>120 ||
+    height<100 || height>250 ||
+    weight<25 || weight>350
+  ){
     alert("Bitte überprüfe deine Angaben.");
     return null;
   }
 
-  const bmi = weight / Math.pow(height / 100, 2);
-
-  const base =
-    10 * weight +
-    6.25 * height -
-    5 * age +
-    ($("sex").value === "male" ? 5 : -161);
+  const bmi=weight/Math.pow(height/100,2);
+  const base=10*weight+6.25*height-5*age+
+    ($("sex").value==="male" ? 5 : -161);
 
   return {
-    bmi,
-    calories:Math.round(base * factor),
-    water:Math.round(weight * 30)
+    bmi:bmi.toFixed(1),
+    calories:Math.round(base*factor),
+    water:Math.round(weight*30)
   };
 }
 
 function showHealth(result) {
-  if (!result || !isMember()) return;
+  if(!result || !isMember())return;
 
-  const box = $("healthValues");
+  const box=$("healthValues");
   box.replaceChildren();
 
-  const values = [
-    ["BMI", result.bmi.toFixed(1)],
-    [
-      "Geschätzter Energiebedarf",
-      result.calories + " kcal/Tag"
-    ],
-    [
-      "Grobe Flüssigkeitsorientierung",
-      result.water + " ml/Tag"
-    ]
+  const values=[
+    ["BMI",result.bmi],
+    ["Geschätzter Energiebedarf",result.calories+" kcal/Tag"],
+    ["Grobe Flüssigkeitsorientierung",result.water+" ml/Tag"]
   ];
 
-  values.forEach(([label, value]) => {
-    const p = document.createElement("p");
-    const strong = document.createElement("strong");
-
-    strong.textContent = label + ": ";
-
-    p.append(
-      strong,
-      document.createTextNode(value)
-    );
-
+  values.forEach(([label,value])=>{
+    const p=document.createElement("p");
+    const strong=document.createElement("strong");
+    strong.textContent=label+": ";
+    p.append(strong,document.createTextNode(value));
     box.appendChild(p);
   });
 
-  const note = document.createElement("p");
-  note.className = "small";
-  note.textContent =
-    "Die Werte sind allgemeine Schätzungen. " +
-    "Sie ersetzen keine individuelle medizinische " +
-    "oder ernährungsfachliche Beurteilung.";
-
+  const note=document.createElement("p");
+  note.className="small";
+  note.textContent=
+    "Die Werte sind allgemeine Schätzungen und keine Diagnose. "+
+    "Der tatsächliche Bedarf kann abweichen.";
   box.appendChild(note);
 
-  $("healthRegistrationNotice")
-    .classList.add("hidden");
-
+  $("healthGate").classList.add("hidden");
   $("healthResult").classList.remove("hidden");
-
-  $("healthResult").scrollIntoView({
-    behavior:"smooth"
-  });
+  $("healthResult").scrollIntoView({behavior:"smooth"});
 }
 
-$("healthForm").addEventListener("submit", e => {
+$("healthForm").addEventListener("submit",e=>{
   e.preventDefault();
-
-  pendingHealth = calculateHealth();
-
-  if (!pendingHealth) return;
+  pendingHealth=calculateHealth();
+  if(!pendingHealth)return;
 
   $("healthResult").classList.add("hidden");
 
-  if (isMember()) {
+  if(isMember()) {
     showHealth(pendingHealth);
   } else {
-    $("healthRegistrationNotice")
-      .classList.remove("hidden");
-
-    $("healthRegistrationNotice")
-      .scrollIntoView({behavior:"smooth"});
+    $("healthGate").classList.remove("hidden");
+    $("healthGate").scrollIntoView({behavior:"smooth"});
   }
 });
 
 /* LEBENSKOMPASS */
 
-["energy", "stress", "mood"].forEach(id => {
-  $(id).addEventListener("input", () => {
-    setText(id + "Out", $(id).value);
+["energy","stress","mood"].forEach(id=>{
+  $(id).addEventListener("input",()=>{
+    setText(id+"Out",$(id).value);
   });
 });
 
 function renderHistory() {
-  const entries = read("checkins", []);
-  const box = $("history");
-
+  const entries=read("checkins",[]);
+  const box=$("history");
   box.replaceChildren();
 
-  setText(
-    "progressText",
-    entries.length + " gespeicherte Tages-Check-ins"
-  );
+  setText("progressText",entries.length+" gespeicherte Tages-Check-ins");
+  $("progressBar").style.width=
+    Math.min(100,entries.length/30*100)+"%";
 
-  $("progressBar").style.width =
-    Math.min(100, entries.length / 30 * 100) + "%";
-
-  entries.slice(-10).reverse().forEach(entry => {
-    const p = document.createElement("p");
-
-    p.textContent =
-      entry.date +
-      " · Energie " + entry.energy +
-      "/10 · Stress " + entry.stress +
-      "/10 · Stimmung " + entry.mood + "/10";
-
+  entries.slice(-10).reverse().forEach(entry=>{
+    const p=document.createElement("p");
+    p.textContent=
+      entry.date+" · Energie "+entry.energy+
+      "/10 · Stress "+entry.stress+
+      "/10 · Stimmung "+entry.mood+"/10";
     box.appendChild(p);
   });
 }
 
-$("compassForm").addEventListener("submit", e => {
+$("compassForm").addEventListener("submit",e=>{
   e.preventDefault();
+  if(!isMember())return;
 
-  if (!isMember()) {
-    $("mitgliedschaft").scrollIntoView({
-      behavior:"smooth"
-    });
-    return;
-  }
-
-  const entry = {
+  const entry={
     date:today(),
     energy:Number($("energy").value),
     stress:Number($("stress").value),
@@ -1272,78 +773,49 @@ $("compassForm").addEventListener("submit", e => {
     notes:$("notes").value
   };
 
-  if (
-    entry.sleep < 0 || entry.sleep > 24 ||
-    entry.movement < 0 || entry.movement > 1440
-  ) {
-    alert("Bitte überprüfe deine Angaben.");
+  if(entry.sleep<0 || entry.sleep>24 ||
+     entry.movement<0 || entry.movement>1440) {
+    alert("Bitte überprüfe Schlaf und Bewegung.");
     return;
   }
 
-  const entries = read("checkins", []);
+  const entries=read("checkins",[]);
+  const index=entries.findIndex(x=>x.date===entry.date);
 
-  const index = entries.findIndex(
-    x => x.date === entry.date
-  );
+  if(index>=0)entries[index]=entry;
+  else entries.push(entry);
 
-  if (index >= 0) {
-    entries[index] = entry;
-  } else {
-    entries.push(entry);
-  }
+  entries.sort((a,b)=>a.date.localeCompare(b.date));
 
-  entries.sort(
-    (a, b) => a.date.localeCompare(b.date)
-  );
+  if(!save("checkins",entries))return;
 
-  if (!save("checkins", entries)) return;
+  let tip="Achte heute auf regelmässige Pausen und ausgewogene Mahlzeiten.";
 
-  let tip =
-    "Achte heute auf regelmässige Pausen " +
-    "und eine ausgewogene Ernährung.";
+  if(entry.stress>=7)
+    tip="Dein Stresswert ist hoch. Eine kurze Atemübung könnte dir guttun.";
+  else if(entry.sleep<6)
+    tip="Du hast wenig geschlafen. Plane heute bewusst Erholung ein.";
+  else if(entry.energy<=4)
+    tip="Deine Energie ist niedrig. Vielleicht tut dir ein ruhiger Spaziergang gut.";
+  else if(entry.movement<15)
+    tip="Vielleicht findest du heute Zeit für etwas leichte Bewegung.";
 
-  if (entry.stress >= 7) {
-    tip =
-      "Dein Stresswert ist hoch. " +
-      "Vielleicht tut dir eine kurze Atemübung gut.";
-  } else if (entry.sleep < 6) {
-    tip =
-      "Du hast wenig geschlafen. " +
-      "Plane bewusst Zeit für Erholung ein.";
-  } else if (entry.energy <= 4) {
-    tip =
-      "Deine Energie ist niedrig. " +
-      "Ein ruhiger Spaziergang könnte angenehm sein.";
-  } else if (entry.movement < 15) {
-    tip =
-      "Vielleicht findest du heute Zeit " +
-      "für etwas leichte Bewegung.";
-  }
-
-  setText("dailyTip", "Dein Tagesimpuls: " + tip);
-
+  setText("dailyTip","Dein Tagesimpuls: "+tip);
   $("dailyTip").classList.remove("hidden");
-
   renderHistory();
 });
 
-$("clearCompass").addEventListener("click", () => {
-  if (
-    confirm(
-      "Alle lokalen Lebenskompass-Einträge löschen?"
-    )
-  ) {
-    localStorage.removeItem(KEY + "checkins");
-
+$("clearCompass").addEventListener("click",()=>{
+  if(confirm("Alle lokalen Lebenskompass-Einträge löschen?")) {
+    localStorage.removeItem(KEY+"checkins");
     $("dailyTip").classList.add("hidden");
-
     renderHistory();
   }
 });
 
 /* ERNÄHRUNGSPLANER */
 
-const meals = {
+const meals={
   balanced:[
     "Frühstück: Haferflocken mit Beeren und Joghurt",
     "Mittag: Quinoa mit Gemüse und Poulet oder Tofu",
@@ -1366,18 +838,16 @@ const meals = {
   ]
 };
 
-$("mealButton").addEventListener("click", () => {
-  const selected = meals[$("diet").value];
+$("mealButton").addEventListener("click",()=>{
+  if(!isMember())return;
 
-  const box = $("mealResult");
+  const box=$("mealResult");
   box.replaceChildren();
 
-  const ul = document.createElement("ul");
-
-  selected.forEach(meal => {
-    const li = document.createElement("li");
-
-    li.textContent = meal;
+  const ul=document.createElement("ul");
+  meals[$("diet").value].forEach(meal=>{
+    const li=document.createElement("li");
+    li.textContent=meal;
     ul.appendChild(li);
   });
 
@@ -1387,199 +857,131 @@ $("mealButton").addEventListener("click", () => {
 
 /* MEDITATION */
 
-let breathTimer = null;
+let breathTimer=null;
 
-$("breathButton").addEventListener("click", () => {
-  if (!isMember()) return;
+$("breathButton").addEventListener("click",()=>{
+  if(!isMember())return;
+  if(breathTimer)clearInterval(breathTimer);
 
-  if (breathTimer) {
-    clearInterval(breathTimer);
-  }
-
-  const box = $("breathText");
+  let seconds=0;
+  const total=60;
+  const box=$("breathText");
   box.classList.remove("hidden");
 
-  let seconds = 0;
-  const total = 60;
-
-  function updateBreath() {
-    if (seconds >= total) {
-      box.textContent =
-        "Die Atemübung ist beendet. " +
-        "Nimm dir einen Moment Zeit.";
-
+  function update() {
+    if(seconds>=total) {
+      box.textContent="Die Übung ist beendet. Nimm dir einen Moment Zeit.";
       clearInterval(breathTimer);
-      breathTimer = null;
+      breathTimer=null;
       return;
     }
 
-    const phase = seconds % 10;
-
-    const instruction =
-      phase < 4
-        ? "Atme ruhig ein"
-        : "Atme langsam aus";
-
-    box.textContent =
-      instruction +
-      " · Noch " + (total - seconds) + " Sekunden";
-
+    box.textContent=
+      (seconds%10<4 ? "Atme ruhig ein" : "Atme langsam aus")+
+      " · Noch "+(total-seconds)+" Sekunden";
     seconds++;
   }
 
-  updateBreath();
-
-  breathTimer = setInterval(
-    updateBreath, 1000
-  );
+  update();
+  breathTimer=setInterval(update,1000);
 });
 
-$("eveningButton").addEventListener("click", () => {
-  if (!isMember()) return;
-
-  setText(
-    "eveningText",
-    "Lass den Tag langsam ausklingen. " +
-    "Lege dein Handy beiseite, atme ruhig " +
-    "und denke an einen schönen Moment des Tages."
-  );
-
+$("eveningButton").addEventListener("click",()=>{
+  if(!isMember())return;
+  setText("eveningText",
+    "Lass den Tag langsam ausklingen. Lege dein Handy beiseite, "+
+    "atme ruhig und denke an einen schönen Moment des Tages.");
   $("eveningText").classList.remove("hidden");
 });
 
 /* COACHING */
 
-$("saveGoal").addEventListener("click", () => {
-  const goal = $("goal").value.trim();
-
-  if (!goal) return;
-
-  if (save("goal", goal)) {
-    setText("goalDisplay", "Dein Ziel: " + goal);
-  }
+$("saveGoal").addEventListener("click",()=>{
+  const goal=$("goal").value.trim();
+  if(goal && save("goal",goal))
+    setText("goalDisplay","Dein Ziel: "+goal);
 });
 
-const savedGoal = read("goal", "");
-
-if (savedGoal) {
-  $("goal").value = savedGoal;
-
-  setText(
-    "goalDisplay",
-    "Dein Ziel: " + savedGoal
-  );
+const savedGoal=read("goal","");
+if(savedGoal) {
+  $("goal").value=savedGoal;
+  setText("goalDisplay","Dein Ziel: "+savedGoal);
 }
 
-/* CHALLENGE */
+/* CHALLENGES */
 
 function renderChallenge() {
-  const days = read("challengeDays", []);
-
-  setText(
-    "challengeProgress",
-    days.length + " von 30 Tagen erledigt"
-  );
-
-  $("challengeButton").disabled =
-    days.includes(today()) || days.length >= 30;
+  const days=read("challengeDays",[]);
+  setText("challengeProgress",days.length+" von 30 Tagen erledigt");
+  $("challengeButton").disabled=
+    days.includes(today()) || days.length>=30;
 }
 
-$("challengeButton").addEventListener("click", () => {
-  const days = read("challengeDays", []);
-
-  if (
-    !days.includes(today()) &&
-    days.length < 30
-  ) {
+$("challengeButton").addEventListener("click",()=>{
+  const days=read("challengeDays",[]);
+  if(!days.includes(today()) && days.length<30) {
     days.push(today());
-    save("challengeDays", days);
+    save("challengeDays",days);
   }
-
   renderChallenge();
 });
 
 /* SPEAKER */
 
-$("speakButton").addEventListener("click", () => {
-  if (!("speechSynthesis" in window)) {
-    alert(
-      "Dein Browser unterstützt keine Sprachausgabe."
-    );
+$("speakButton").addEventListener("click",()=>{
+  if(!("speechSynthesis" in window)) {
+    alert("Dein Browser unterstützt keine Sprachausgabe.");
     return;
   }
-
   speechSynthesis.cancel();
-
-  const speech = new SpeechSynthesisUtterance(
+  const speech=new SpeechSynthesisUtterance(
     $("speakerText").textContent
   );
-
-  speech.lang = "de-CH";
-  speech.rate = 0.95;
-
+  speech.lang="de-CH";
+  speech.rate=.95;
   speechSynthesis.speak(speech);
 });
 
-$("stopSpeak").addEventListener("click", () => {
-  if ("speechSynthesis" in window) {
-    speechSynthesis.cancel();
-  }
+$("stopSpeak").addEventListener("click",()=>{
+  if("speechSynthesis" in window)speechSynthesis.cancel();
 });
 
-/* KONTAKTFORMULAR */
+/* KONTAKT */
 
-$("bookingForm").addEventListener("submit", e => {
+$("bookingForm").addEventListener("submit",e=>{
   e.preventDefault();
 
-  const name = $("bookName").value.trim();
-  const email = $("bookEmail").value.trim();
-  const service = $("bookService").value;
-  const message = $("bookMessage").value.trim();
+  const request=
+    "Anfrage an RETO Ernährungsberatung\n\n"+
+    "Name: "+$("bookName").value.trim()+"\n"+
+    "E-Mail: "+$("bookEmail").value.trim()+"\n"+
+    "Angebot: "+$("bookService").value+"\n\n"+
+    "Nachricht:\n"+$("bookMessage").value.trim();
 
-  const request =
-    "Anfrage an RETO Ernährungsberatung\n\n" +
-    "Name: " + name + "\n" +
-    "E-Mail: " + email + "\n" +
-    "Angebot: " + service + "\n\n" +
-    "Nachricht:\n" + message;
-
-  $("bookingCopy").value = request;
-
+  $("bookingCopy").value=request;
   $("bookingResult").classList.remove("hidden");
-
-  $("bookingResult").scrollIntoView({
-    behavior:"smooth"
-  });
+  $("bookingResult").scrollIntoView({behavior:"smooth"});
 });
 
-$("copyBooking").addEventListener(
-  "click", async () => {
-    const text = $("bookingCopy").value;
-
-    try {
-      await navigator.clipboard.writeText(text);
-
-      alert("Anfrage kopiert.");
-    } catch {
-      $("bookingCopy").focus();
-      $("bookingCopy").select();
-
-      alert(
-        "Bitte den markierten Text kopieren."
-      );
-    }
+$("copyBooking").addEventListener("click",async()=>{
+  try {
+    await navigator.clipboard.writeText($("bookingCopy").value);
+    alert("Anfrage kopiert.");
+  } catch {
+    $("bookingCopy").focus();
+    $("bookingCopy").select();
+    alert("Bitte den markierten Text kopieren.");
   }
-);
+});
 
-/* INITIALISIERUNG */
+/* START */
 
+$("year").textContent=new Date().getFullYear();
 updateMemberAccess();
 renderHistory();
 renderChallenge();
-
-setTimeout(handleProtectedHash, 100);
+setTimeout(guardNavigation,100);
 
 </script>
-
 </body>
 </html>
