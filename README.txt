@@ -1,11 +1,5 @@
-RETO Website V3.1 – vereinter Lebenskompass
+RETO V3.3 – Ein gemeinsamer Lebenskompass
 
-Alle Dateien ins Hauptverzeichnis des GitHub-Repositorys laden und vorhandene gleichnamige Dateien ersetzen. Render: Static Site, Build Command echo "Static site ready", Publish Directory .
+Die drei bisherigen Bereiche Tages-Check-in, Epigenetik-Reflexion und HealthScore befinden sich jetzt in einer gemeinsamen Ansicht unter lebenskompass.html. Die bisherigen localStorage-Schlüssel bleiben unverändert, bestehende Daten bleiben auf derselben Domain und im selben Browser erhalten. Der Index ist eine subjektive Lifestyle-Orientierung, keine medizinische Messung.
 
-Menü: nur noch Lebenskompass. Unter lebenskompass.html befinden sich Tages-Check-in, Epigenetik-Kompass und HealthScore auf einer Seite. Die alten Links epigenetik-kompass.html und healthscore.html leiten auf die jeweiligen Bereiche weiter.
-
-Der HealthScore nutzt bei beiden vorhandenen Ergebnissen 50 % den neuesten Tages-Check-in und 50 % die Epigenetik-Reflexion. Fehlt eine Quelle, zeigt er den vorhandenen Wert mit Hinweis. Die Verlaufsbalken zeigen ausschliesslich Tages-Check-ins, da der Epigenetik-Kompass nur den letzten Stand speichert. Keine medizinische Diagnose.
-
-Daten bleiben im localStorage des Browsers; keine Datenbank, keine Synchronisierung. Bestehende gespeicherte Daten bleiben erhalten, da die Schlüssel unverändert sind.
-
-Version 3.2: Keto als vierte Ernährungsform ergänzt. Keto-Rezepte werden im Wochenplan und in der Einkaufsliste unterstützt. Keine verifizierten Makronährwerte, keine medizinische Diätplanung.
+Installation: ZIP entpacken und Dateien ins Hauptverzeichnis des GitHub-Repositories hochladen; Änderungen committen. Render Static Site veröffentlicht automatisch. Build Command: echo "Static site ready"; Publish Directory: .
