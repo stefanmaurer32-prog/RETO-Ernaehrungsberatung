@@ -7,3 +7,5 @@ Menü: nur noch Lebenskompass. Unter lebenskompass.html befinden sich Tages-Chec
 Der HealthScore nutzt bei beiden vorhandenen Ergebnissen 50 % den neuesten Tages-Check-in und 50 % die Epigenetik-Reflexion. Fehlt eine Quelle, zeigt er den vorhandenen Wert mit Hinweis. Die Verlaufsbalken zeigen ausschliesslich Tages-Check-ins, da der Epigenetik-Kompass nur den letzten Stand speichert. Keine medizinische Diagnose.
 
 Daten bleiben im localStorage des Browsers; keine Datenbank, keine Synchronisierung. Bestehende gespeicherte Daten bleiben erhalten, da die Schlüssel unverändert sind.
+
+Version 3.2: Keto als vierte Ernährungsform ergänzt. Keto-Rezepte werden im Wochenplan und in der Einkaufsliste unterstützt. Keine verifizierten Makronährwerte, keine medizinische Diätplanung.
