@@ -6,9 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>RETO ZAUGG | Ernährung, Epigenetik & Coaching</title>
-
-<meta name="description"
-content="RETO ZAUGG – Ernährungsberatung, Epigenetik-Coaching, Meditation, Gesundheitscheck und persönlicher Lebenskompass.">
+<meta name="description" content="RETO ZAUGG – Ernährungsberatung, Epigenetik-Coaching, Meditation, Gesundheitscheck und persönlicher Lebenskompass.">
 
 <style>
 :root{
@@ -101,12 +99,7 @@ nav{
 .hero{
   padding:95px 25px;
   text-align:center;
-  background:linear-gradient(
-    120deg,
-    #e0ebdc,
-    #f8f5ed,
-    #e8f1e7
-  );
+  background:linear-gradient(120deg,#e0ebdc,#f8f5ed,#e8f1e7);
 }
 
 .hero-inner{
@@ -146,9 +139,7 @@ nav{
   text-decoration:none;
 }
 
-.btn:hover,button:hover{
-  background:#1d503a;
-}
+.btn:hover,button:hover{background:#1d503a}
 
 .btn-outline{
   background:transparent;
@@ -180,6 +171,34 @@ button:disabled{
   border-radius:18px;
   margin-bottom:20px;
   box-shadow:0 6px 24px #173b2610;
+}
+
+/* ANGEBOTSKARTEN: ALLE LINKS AUF GLEICHER HÖHE */
+
+.angebote-grid{
+  align-items:stretch;
+}
+
+.angebot-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  margin-bottom:0;
+}
+
+.angebot-card h3{
+  min-height:48px;
+}
+
+.angebot-card a{
+  margin-top:auto;
+  padding-top:20px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.angebot-card a:hover{
+  text-decoration:underline;
 }
 
 label{
@@ -248,7 +267,7 @@ input[type=checkbox]{width:auto}
   border-left:4px solid var(--green);
 }
 
-/* FÜNF MITGLIEDERVORTEILE IN EINER ZEILE */
+/* FÜNF MITGLIEDERVORTEILE NEBENEINANDER */
 
 .member-features{
   display:grid;
@@ -297,6 +316,7 @@ footer p{color:#d6e3da}
     flex-direction:column;
     align-items:flex-start;
   }
+
   .navlinks{gap:10px}
   .hero{padding:65px 20px}
   .hero p{font-size:16px}
@@ -324,28 +344,16 @@ footer p{color:#d6e3da}
     <a href="#angebote">Angebote</a>
     <a href="#rechner">Gesundheitscheck</a>
 
-    <a href="#kompass" class="member-nav hidden">
-      Lebenskompass
-    </a>
-    <a href="#meditation" class="member-nav hidden">
-      Meditation
-    </a>
-    <a href="#ernaehrung" class="member-nav hidden">
-      Ernährung
-    </a>
-    <a href="#coaching" class="member-nav hidden">
-      Coaching
-    </a>
-    <a href="#challenges" class="member-nav hidden">
-      Challenges
-    </a>
+    <a href="#kompass" class="member-nav hidden">Lebenskompass</a>
+    <a href="#meditation" class="member-nav hidden">Meditation</a>
+    <a href="#ernaehrung" class="member-nav hidden">Ernährung</a>
+    <a href="#coaching" class="member-nav hidden">Coaching</a>
+    <a href="#challenges" class="member-nav hidden">Challenges</a>
 
     <a href="#speaker">Speaker</a>
     <a href="#buchung">Kontakt</a>
 
-    <a href="#mitgliedschaft"
-       id="memberNavButton"
-       class="member-button">
+    <a href="#mitgliedschaft" id="memberNavButton" class="member-button">
       🔒 Kostenlos registrieren
     </a>
   </div>
@@ -357,89 +365,104 @@ footer p{color:#d6e3da}
 <!-- STARTSEITE -->
 
 <section id="start" class="hero">
-<div class="hero-inner">
+  <div class="hero-inner">
 
-  <div class="eyebrow">
-    RETO ZAUGG · ERNÄHRUNG · EPIGENETIK · COACHING
+    <div class="eyebrow">
+      RETO ZAUGG · ERNÄHRUNG · EPIGENETIK · COACHING
+    </div>
+
+    <h1>
+      Du kümmerst dich um alles.
+      <span>Aber wann kümmerst du dich um dich?</span>
+    </h1>
+
+    <p>
+      Deine Gesundheit beginnt mit den Entscheidungen,
+      die du heute triffst. Entdecke deinen persönlichen
+      Weg zu mehr Energie, Balance und Wohlbefinden.
+    </p>
+
+    <div class="buttons">
+      <a href="#rechner" class="btn">
+        Jetzt kostenlosen Gesundheitscheck starten →
+      </a>
+
+      <a href="#buchung" class="btn btn-outline">
+        Kostenloses Kennenlerngespräch vereinbaren
+      </a>
+    </div>
+
+    <p class="small">
+      ✓ Kostenloser Gesundheitscheck
+      ✓ Unverbindlich
+      ✓ Ergebnis nach kostenloser Demo-Registrierung
+    </p>
+
   </div>
-
-  <h1>
-    Du kümmerst dich um alles.
-    <span>Aber wann kümmerst du dich um dich?</span>
-  </h1>
-
-  <p>
-    Deine Gesundheit beginnt mit den Entscheidungen,
-    die du heute triffst. Entdecke deinen persönlichen
-    Weg zu mehr Energie, Balance und Wohlbefinden.
-  </p>
-
-  <div class="buttons">
-    <a href="#rechner" class="btn">
-      Jetzt kostenlosen Gesundheitscheck starten →
-    </a>
-
-    <a href="#buchung" class="btn btn-outline">
-      Kostenloses Kennenlerngespräch vereinbaren
-    </a>
-  </div>
-
-  <p class="small">
-    ✓ Kostenloser Gesundheitscheck
-    ✓ Unverbindlich
-    ✓ Ergebnis nach kostenloser Demo-Registrierung
-  </p>
-
-</div>
 </section>
 
-<!-- ANGEBOTE -->
+<!-- MEINE ANGEBOTE -->
 
 <section id="angebote" class="container">
+
   <div class="eyebrow">
     DEIN WEG ZU MEHR WOHLBEFINDEN
   </div>
 
   <h2>Meine Angebote</h2>
 
-  <div class="grid">
+  <div class="grid angebote-grid">
 
-    <article class="card">
+    <article class="card angebot-card">
       <h3>🥗 Ernährungsberatung</h3>
+
       <p>
         Alltagstaugliche Ernährung und neue
         Gewohnheiten entdecken.
       </p>
-      <a href="#buchung">Beratung anfragen →</a>
+
+      <a href="#buchung">
+        Beratung anfragen →
+      </a>
     </article>
 
-    <article class="card">
+    <article class="card angebot-card">
       <h3>🧬 Epigenetik-Coaching</h3>
+
       <p>
         Zusammenhänge zwischen Lebensstil
         und Genregulation verstehen.
       </p>
-      <a href="#epigenetik">Mehr erfahren →</a>
+
+      <a href="#epigenetik">
+        Mehr erfahren →
+      </a>
     </article>
 
-    <article class="card">
+    <article class="card angebot-card">
       <h3>🧘 Meditation</h3>
+
       <p>
         Bewusste Pausen für mehr Ruhe
         und Achtsamkeit.
       </p>
+
       <a href="#mitgliedschaft">
         Kostenlos freischalten →
       </a>
     </article>
 
-    <article class="card">
+    <article class="card angebot-card">
       <h3>💚 Persönliches Coaching</h3>
+
       <p>
         Individuelle Ziele setzen und
         neue Routinen entwickeln.
       </p>
-      <a href="#buchung">Coaching anfragen →</a>
+
+      <a href="#buchung">
+        Coaching anfragen →
+      </a>
     </article>
 
   </div>
@@ -450,9 +473,7 @@ footer p{color:#d6e3da}
 <section id="rechner" class="soft">
 <div class="container">
 
-  <div class="eyebrow">
-    KOSTENLOSER GESUNDHEITSCHECK
-  </div>
+  <div class="eyebrow">KOSTENLOSER GESUNDHEITSCHECK</div>
 
   <h2>Entdecke deine persönlichen Richtwerte</h2>
 
@@ -466,56 +487,38 @@ footer p{color:#d6e3da}
     <div class="row">
       <div>
         <label for="age">Alter</label>
-        <input id="age" type="number"
-               min="18" max="120" required>
+        <input id="age" type="number" min="18" max="120" required>
       </div>
 
       <div>
         <label for="height">Grösse (cm)</label>
-        <input id="height" type="number"
-               min="100" max="250" required>
+        <input id="height" type="number" min="100" max="250" required>
       </div>
 
       <div>
         <label for="weight">Gewicht (kg)</label>
-        <input id="weight" type="number"
-               min="25" max="350"
-               step="0.1" required>
+        <input id="weight" type="number" min="25" max="350" step="0.1" required>
       </div>
     </div>
 
     <div class="row">
-
       <div>
         <label for="sex">Berechnungsformel</label>
         <select id="sex">
-          <option value="female">
-            Weibliche Formel
-          </option>
-          <option value="male">
-            Männliche Formel
-          </option>
+          <option value="female">Weibliche Formel</option>
+          <option value="male">Männliche Formel</option>
         </select>
       </div>
 
       <div>
         <label for="activity">Aktivität</label>
         <select id="activity">
-          <option value="1.2">
-            Wenig Bewegung
-          </option>
-          <option value="1.375">
-            Leicht aktiv
-          </option>
-          <option value="1.55">
-            Mässig aktiv
-          </option>
-          <option value="1.725">
-            Sehr aktiv
-          </option>
+          <option value="1.2">Wenig Bewegung</option>
+          <option value="1.375">Leicht aktiv</option>
+          <option value="1.55">Mässig aktiv</option>
+          <option value="1.725">Sehr aktiv</option>
         </select>
       </div>
-
     </div>
 
     <p class="small">
@@ -526,7 +529,6 @@ footer p{color:#d6e3da}
     <button type="submit">
       Gesundheitscheck auswerten →
     </button>
-
   </form>
 
   <div id="healthGate" class="notice hidden">
@@ -540,10 +542,7 @@ footer p{color:#d6e3da}
     </a>
   </div>
 
-  <div id="healthResult"
-       class="result hidden"
-       aria-live="polite">
-
+  <div id="healthResult" class="result hidden" aria-live="polite">
     <h3>Deine persönliche Auswertung</h3>
     <div id="healthValues"></div>
 
@@ -555,7 +554,7 @@ footer p{color:#d6e3da}
 </div>
 </section>
 
-<!-- MITGLIEDSCHAFT -->
+<!-- KOSTENLOSE REGISTRIERUNG -->
 
 <section id="mitgliedschaft" class="container">
 
@@ -578,8 +577,6 @@ footer p{color:#d6e3da}
       Coaching-Begleiter und spannenden Challenges.
     </p>
 
-    <!-- ALLE FÜNF VORTEILE NEBENEINANDER -->
-
     <div class="member-features">
 
       <div class="member-feature">
@@ -599,16 +596,12 @@ footer p{color:#d6e3da}
 
       <div class="member-feature">
         <h3>💚 Digitaler Coaching-Begleiter</h3>
-        <p>
-          Persönliche Ziele setzen und verfolgen.
-        </p>
+        <p>Persönliche Ziele setzen und verfolgen.</p>
       </div>
 
       <div class="member-feature">
         <h3>🏆 RETO ZAUGG Challenges</h3>
-        <p>
-          Starte deine persönliche 30-Tage-Challenge.
-        </p>
+        <p>Starte deine persönliche 30-Tage-Challenge.</p>
       </div>
 
     </div>
@@ -616,140 +609,95 @@ footer p{color:#d6e3da}
     <form id="memberForm">
 
       <label for="memberName">Vorname</label>
-      <input id="memberName"
-             maxlength="80" required>
+      <input id="memberName" maxlength="80" required>
 
-      <label for="memberEmail">
-        E-Mail-Adresse
-      </label>
-      <input id="memberEmail"
-             type="email" required>
+      <label for="memberEmail">E-Mail-Adresse</label>
+      <input id="memberEmail" type="email" required>
 
       <label class="check">
         <input type="checkbox" required>
         Ich verstehe, dass dies eine lokale
-        Demo-Registrierung ohne echtes
-        Benutzerkonto ist.
+        Demo-Registrierung ohne echtes Benutzerkonto ist.
       </label>
 
       <button type="submit">
         Jetzt kostenlos freischalten →
       </button>
-
     </form>
 
     <p class="small">
       Keine Kreditkarte, kein E-Mail-Versand
       und keine Server-Registrierung.
     </p>
-
   </div>
 
   <div id="memberWelcome" class="result hidden">
 
-    <h2 id="welcomeTitle">
-      Willkommen bei RETO ZAUGG!
-    </h2>
+    <h2 id="welcomeTitle">Willkommen bei RETO ZAUGG!</h2>
 
     <p>
-      Deine Funktionen sind in diesem
-      Browser freigeschaltet.
+      Deine Funktionen sind in diesem Browser freigeschaltet.
     </p>
 
     <div class="buttons">
-      <a href="#kompass" class="btn">
-        🧭 Lebenskompass
-      </a>
-      <a href="#meditation" class="btn">
-        🧘 Meditation
-      </a>
-      <a href="#ernaehrung" class="btn">
-        🥗 Ernährungsplaner
-      </a>
-      <a href="#coaching" class="btn">
-        💚 Coaching-Begleiter
-      </a>
-      <a href="#challenges" class="btn">
-        🏆 Challenges
-      </a>
+      <a href="#kompass" class="btn">🧭 Lebenskompass</a>
+      <a href="#meditation" class="btn">🧘 Meditation</a>
+      <a href="#ernaehrung" class="btn">🥗 Ernährungsplaner</a>
+      <a href="#coaching" class="btn">💚 Coaching-Begleiter</a>
+      <a href="#challenges" class="btn">🏆 Challenges</a>
     </div>
 
     <button type="button" id="logoutButton">
       Demo-Zugang zurücksetzen
     </button>
-
   </div>
 
 </section>
 
 <!-- LEBENSKOMPASS -->
 
-<section id="kompass"
-         class="container member-only hidden">
+<section id="kompass" class="container member-only hidden">
 
-  <div class="eyebrow">
-    DEIN TÄGLICHER BEGLEITER
-  </div>
-
+  <div class="eyebrow">DEIN TÄGLICHER BEGLEITER</div>
   <h2>RETO ZAUGG Lebenskompass</h2>
 
   <p>
     Wie geht es dir heute?
-    Halte deine Werte fest und
-    beobachte deinen Verlauf.
+    Halte deine Werte fest und beobachte deinen Verlauf.
   </p>
 
   <form id="compassForm" class="card">
 
     <label for="energy">
-      Energie:
-      <output id="energyOut">5</output>/10
+      Energie: <output id="energyOut">5</output>/10
     </label>
-    <input id="energy" type="range"
-           min="1" max="10" value="5">
+    <input id="energy" type="range" min="1" max="10" value="5">
 
     <label for="stress">
-      Stress:
-      <output id="stressOut">5</output>/10
+      Stress: <output id="stressOut">5</output>/10
     </label>
-    <input id="stress" type="range"
-           min="1" max="10" value="5">
+    <input id="stress" type="range" min="1" max="10" value="5">
 
     <label for="mood">
-      Stimmung:
-      <output id="moodOut">5</output>/10
+      Stimmung: <output id="moodOut">5</output>/10
     </label>
-    <input id="mood" type="range"
-           min="1" max="10" value="5">
+    <input id="mood" type="range" min="1" max="10" value="5">
 
-    <label for="sleep">
-      Schlafdauer (Stunden)
-    </label>
-    <input id="sleep" type="number"
-           min="0" max="24"
-           step="0.5" value="7" required>
+    <label for="sleep">Schlafdauer (Stunden)</label>
+    <input id="sleep" type="number" min="0" max="24" step="0.5" value="7" required>
 
-    <label for="movement">
-      Bewegung (Minuten)
-    </label>
-    <input id="movement" type="number"
-           min="0" max="1440"
-           value="20" required>
+    <label for="movement">Bewegung (Minuten)</label>
+    <input id="movement" type="number" min="0" max="1440" value="20" required>
 
-    <label for="notes">
-      Persönliche Notiz
-    </label>
+    <label for="notes">Persönliche Notiz</label>
     <textarea id="notes" rows="3"></textarea>
 
     <button type="submit">
       Heutigen Check-in speichern
     </button>
-
   </form>
 
-  <div id="dailyTip"
-       class="result hidden"
-       aria-live="polite"></div>
+  <div id="dailyTip" class="result hidden" aria-live="polite"></div>
 
   <div class="card">
     <h3>Dein Verlauf</h3>
@@ -773,52 +721,36 @@ footer p{color:#d6e3da}
 
 <!-- MEDITATION -->
 
-<section id="meditation"
-         class="soft member-only hidden">
-
+<section id="meditation" class="soft member-only hidden">
 <div class="container">
 
-  <div class="eyebrow">
-    RETO ZAUGG MITGLIEDERBEREICH
-  </div>
-
+  <div class="eyebrow">RETO ZAUGG MITGLIEDERBEREICH</div>
   <h2>Meditation &amp; Achtsamkeit</h2>
 
-  <p>
-    Gönne dir einen bewussten Moment der Ruhe.
-  </p>
+  <p>Gönne dir einen bewussten Moment der Ruhe.</p>
 
   <div class="grid">
 
     <div class="card">
       <h3>🌿 Ruhiger Atem</h3>
-
-      <p>
-        Eine kurze Atemübung über 60 Sekunden.
-      </p>
+      <p>Eine kurze Atemübung über 60 Sekunden.</p>
 
       <button type="button" id="breathButton">
         Atemübung starten
       </button>
 
-      <div id="breathText"
-           class="result hidden"
-           aria-live="polite"></div>
+      <div id="breathText" class="result hidden" aria-live="polite"></div>
     </div>
 
     <div class="card">
       <h3>🌙 Abendruhe</h3>
-
-      <p>
-        Ein Impuls zum bewussten Abschalten.
-      </p>
+      <p>Ein Impuls zum bewussten Abschalten.</p>
 
       <button type="button" id="eveningButton">
         Abendimpuls anzeigen
       </button>
 
-      <div id="eveningText"
-           class="result hidden"></div>
+      <div id="eveningText" class="result hidden"></div>
     </div>
 
   </div>
@@ -828,13 +760,9 @@ footer p{color:#d6e3da}
 
 <!-- ERNÄHRUNGSPLANER -->
 
-<section id="ernaehrung"
-         class="container member-only hidden">
+<section id="ernaehrung" class="container member-only hidden">
 
-  <div class="eyebrow">
-    RETO ZAUGG MITGLIEDERBEREICH
-  </div>
-
+  <div class="eyebrow">RETO ZAUGG MITGLIEDERBEREICH</div>
   <h2>Intelligenter Ernährungsplaner</h2>
 
   <p>
@@ -842,33 +770,20 @@ footer p{color:#d6e3da}
   </p>
 
   <div class="card">
-
-    <label for="diet">
-      Ernährungsform
-    </label>
+    <label for="diet">Ernährungsform</label>
 
     <select id="diet">
-      <option value="balanced">
-        Ausgewogen
-      </option>
-      <option value="vegetarian">
-        Vegetarisch
-      </option>
-      <option value="vegan">
-        Vegan
-      </option>
-      <option value="keto">
-        Keto
-      </option>
+      <option value="balanced">Ausgewogen</option>
+      <option value="vegetarian">Vegetarisch</option>
+      <option value="vegan">Vegan</option>
+      <option value="keto">Keto</option>
     </select>
 
     <button type="button" id="mealButton">
       Menüideen erstellen
     </button>
 
-    <div id="mealResult"
-         class="result hidden"></div>
-
+    <div id="mealResult" class="result hidden"></div>
   </div>
 
   <p class="small">
@@ -880,13 +795,9 @@ footer p{color:#d6e3da}
 
 <!-- COACHING -->
 
-<section id="coaching"
-         class="container member-only hidden">
+<section id="coaching" class="container member-only hidden">
 
-  <div class="eyebrow">
-    RETO ZAUGG MITGLIEDERBEREICH
-  </div>
-
+  <div class="eyebrow">RETO ZAUGG MITGLIEDERBEREICH</div>
   <h2>Digitaler Coaching-Begleiter</h2>
 
   <p>
@@ -895,13 +806,9 @@ footer p{color:#d6e3da}
   </p>
 
   <div class="card">
+    <label for="goal">Mein persönliches Ziel</label>
 
-    <label for="goal">
-      Mein persönliches Ziel
-    </label>
-
-    <input id="goal"
-           maxlength="300"
+    <input id="goal" maxlength="300"
            placeholder="z.B. täglich 20 Minuten spazieren">
 
     <button type="button" id="saveGoal">
@@ -909,31 +816,23 @@ footer p{color:#d6e3da}
     </button>
 
     <p id="goalDisplay"></p>
-
   </div>
 
 </section>
 
 <!-- CHALLENGES -->
 
-<section id="challenges"
-         class="soft member-only hidden">
-
+<section id="challenges" class="soft member-only hidden">
 <div class="container">
 
-  <div class="eyebrow">
-    RETO ZAUGG MITGLIEDERBEREICH
-  </div>
-
+  <div class="eyebrow">RETO ZAUGG MITGLIEDERBEREICH</div>
   <h2>RETO ZAUGG Challenges</h2>
 
   <p>
-    Starte deine persönliche
-    30-Tage-Wohlfühlchallenge.
+    Starte deine persönliche 30-Tage-Wohlfühlchallenge.
   </p>
 
   <div class="card">
-
     <h3>🏆 30 Tage für dich</h3>
 
     <p>
@@ -948,10 +847,8 @@ footer p{color:#d6e3da}
     </button>
 
     <p class="small">
-      Lokale Einzel-Challenge,
-      noch keine echte Community.
+      Lokale Einzel-Challenge, noch keine echte Community.
     </p>
-
   </div>
 
 </div>
@@ -962,10 +859,7 @@ footer p{color:#d6e3da}
 <section id="epigenetik" class="soft">
 <div class="container">
 
-  <div class="eyebrow">
-    WISSEN VERSTEHEN
-  </div>
-
+  <div class="eyebrow">WISSEN VERSTEHEN</div>
   <h2>Epigenetik-Wissenswelt</h2>
 
   <p>
@@ -987,8 +881,7 @@ footer p{color:#d6e3da}
     <div class="card">
       <h3>🌙 Schlaf</h3>
       <p>
-        Biologische Rhythmen
-        und ihre Bedeutung.
+        Biologische Rhythmen und ihre Bedeutung.
       </p>
     </div>
 
@@ -1009,10 +902,7 @@ footer p{color:#d6e3da}
 
 <section id="speaker" class="container">
 
-  <div class="eyebrow">
-    VORTRÄGE &amp; WORKSHOPS
-  </div>
-
+  <div class="eyebrow">VORTRÄGE &amp; WORKSHOPS</div>
   <h2>RETO ZAUGG als Speaker</h2>
 
   <p>
@@ -1030,17 +920,14 @@ footer p{color:#d6e3da}
   </p>
 
   <div class="card">
-
     <h3>Speaker-Probe</h3>
 
     <p id="speakerText">
-      Wusstest du, dass dein Lebensstil
-      beeinflussen kann, wie deine Gene
-      reguliert werden?
+      Wusstest du, dass dein Lebensstil beeinflussen
+      kann, wie deine Gene reguliert werden?
 
-      Ich bin RETO ZAUGG,
-      diplomierter Ernährungsberater,
-      Speaker und zertifizierter
+      Ich bin RETO ZAUGG, diplomierter
+      Ernährungsberater, Speaker und zertifizierter
       Epigenetik-Coach.
 
       In meinen Vorträgen zeige ich dir,
@@ -1056,7 +943,6 @@ footer p{color:#d6e3da}
     <button type="button" id="stopSpeak">
       Stoppen
     </button>
-
   </div>
 
   <a href="#buchung" class="btn">
@@ -1074,32 +960,28 @@ footer p{color:#d6e3da}
 
   <p>
     <strong>
-      Dipl. Ernährungsberater,
-      Speaker und zertifizierter
-      Epigenetik-Coach.
+      Dipl. Ernährungsberater, Speaker
+      und zertifizierter Epigenetik-Coach.
     </strong>
   </p>
 
   <p>
-    Meine Leidenschaft ist es,
-    Menschen auf ihrem Weg zu mehr
-    Gesundheit, Bewusstsein und
+    Meine Leidenschaft ist es, Menschen auf ihrem
+    Weg zu mehr Gesundheit, Bewusstsein und
     Lebensqualität zu begleiten.
   </p>
 
   <p>
-    Ich verbinde Ernährungswissen
-    mit einem ganzheitlichen Blick
-    auf Bewegung, Schlaf, Stress
-    und persönliche Gewohnheiten.
+    Ich verbinde Ernährungswissen mit einem
+    ganzheitlichen Blick auf Bewegung, Schlaf,
+    Stress und persönliche Gewohnheiten.
   </p>
 
   <p>
     <strong>Meine Philosophie:</strong>
     Es geht nicht darum, perfekt zu sein.
-    Es geht darum, jeden Tag einen
-    bewussten Schritt für sich selbst
-    zu machen.
+    Es geht darum, jeden Tag einen bewussten
+    Schritt für sich selbst zu machen.
   </p>
 
 </div>
@@ -1109,10 +991,7 @@ footer p{color:#d6e3da}
 
 <section id="buchung" class="container">
 
-  <div class="eyebrow">
-    KONTAKT
-  </div>
-
+  <div class="eyebrow">KONTAKT</div>
   <h2>Dein erster Schritt beginnt hier</h2>
 
   <p>
@@ -1125,29 +1004,20 @@ footer p{color:#d6e3da}
     <label for="bookName">Name</label>
     <input id="bookName" required>
 
-    <label for="bookEmail">
-      E-Mail-Adresse
-    </label>
+    <label for="bookEmail">E-Mail-Adresse</label>
     <input id="bookEmail" type="email" required>
 
-    <label for="bookService">
-      Angebot
-    </label>
+    <label for="bookService">Angebot</label>
 
     <select id="bookService">
-      <option>
-        Kostenloses Kennenlerngespräch
-      </option>
+      <option>Kostenloses Kennenlerngespräch</option>
       <option>Ernährungsberatung</option>
       <option>Epigenetik-Coaching</option>
       <option>Persönliches Coaching</option>
       <option>Speaker-Anfrage</option>
     </select>
 
-    <label for="bookMessage">
-      Nachricht
-    </label>
-
+    <label for="bookMessage">Nachricht</label>
     <textarea id="bookMessage" rows="4"></textarea>
 
     <button type="submit">
@@ -1155,18 +1025,16 @@ footer p{color:#d6e3da}
     </button>
 
     <p class="small">
-      Demo: Es wird noch keine Nachricht
-      versendet und kein Termin reserviert.
+      Demo: Es wird noch keine Nachricht versendet
+      und kein Termin reserviert.
     </p>
-
   </form>
 
   <div id="bookingResult" class="result hidden">
 
     <h3>Deine vorbereitete Anfrage</h3>
 
-    <textarea id="bookingCopy"
-              rows="8" readonly></textarea>
+    <textarea id="bookingCopy" rows="8" readonly></textarea>
 
     <button type="button" id="copyBooking">
       Anfrage kopieren
@@ -1180,10 +1048,12 @@ footer p{color:#d6e3da}
 
 <footer>
   <strong>RETO ZAUGG</strong>
+
   <p>
     Ernährungsberatung · Epigenetik ·
     Meditation · Coaching
   </p>
+
   <p>
     © <span id="year"></span>
     RETO ZAUGG · Demo-Webseite
@@ -1193,15 +1063,15 @@ footer p{color:#d6e3da}
 <script>
 "use strict";
 
-const $ = id => document.getElementById(id);
+const $=id=>document.getElementById(id);
 
 /*
-  Der bisherige Speicherschlüssel bleibt bestehen,
-  damit vorhandene lokale Daten erhalten bleiben.
+  Schlüssel bewusst unverändert:
+  Bisherige lokale Daten bleiben erhalten.
 */
-const KEY = "reto_demo_v3_";
+const KEY="reto_demo_v3_";
 
-const protectedIds = [
+const protectedIds=[
   "kompass",
   "meditation",
   "ernaehrung",
@@ -1209,35 +1079,27 @@ const protectedIds = [
   "challenges"
 ];
 
-function read(key,fallback) {
-  try {
-    const value = localStorage.getItem(KEY+key);
-    return value===null
-      ? fallback
-      : JSON.parse(value);
-  } catch {
+function read(key,fallback){
+  try{
+    const value=localStorage.getItem(KEY+key);
+    return value===null?fallback:JSON.parse(value);
+  }catch{
     return fallback;
   }
 }
 
-function save(key,value) {
-  try {
-    localStorage.setItem(
-      KEY+key,
-      JSON.stringify(value)
-    );
+function save(key,value){
+  try{
+    localStorage.setItem(KEY+key,JSON.stringify(value));
     return true;
-  } catch {
-    alert(
-      "Die lokale Speicherung ist nicht verfügbar."
-    );
+  }catch{
+    alert("Die lokale Speicherung ist nicht verfügbar.");
     return false;
   }
 }
 
-function today() {
+function today(){
   const d=new Date();
-
   return [
     d.getFullYear(),
     String(d.getMonth()+1).padStart(2,"0"),
@@ -1245,149 +1107,104 @@ function today() {
   ].join("-");
 }
 
-function isMember() {
+function isMember(){
   return read("registered",false)===true;
 }
 
-function setText(id,value) {
+function setText(id,value){
   $(id).textContent=value;
 }
 
-/* REGISTRIERUNG */
+/* MITGLIEDERBEREICH */
 
-function updateMemberAccess() {
+function updateMemberAccess(){
   const member=isMember();
 
-  document.querySelectorAll(".member-only")
-    .forEach(el=>{
-      el.classList.toggle("hidden",!member);
-    });
+  document.querySelectorAll(".member-only").forEach(el=>{
+    el.classList.toggle("hidden",!member);
+  });
 
-  document.querySelectorAll(".member-nav")
-    .forEach(el=>{
-      el.classList.toggle("hidden",!member);
-    });
+  document.querySelectorAll(".member-nav").forEach(el=>{
+    el.classList.toggle("hidden",!member);
+  });
 
-  $("memberGate").classList.toggle(
-    "hidden",
-    member
-  );
+  $("memberGate").classList.toggle("hidden",member);
+  $("memberWelcome").classList.toggle("hidden",!member);
 
-  $("memberWelcome").classList.toggle(
-    "hidden",
-    !member
-  );
-
-  $("memberNavButton").textContent=
-    member
-      ? "💚 Mein RETO ZAUGG"
-      : "🔒 Kostenlos registrieren";
+  $("memberNavButton").textContent=member
+    ?"💚 Mein RETO ZAUGG"
+    :"🔒 Kostenlos registrieren";
 
   const name=read("memberName","");
 
   setText(
     "welcomeTitle",
     name
-      ? "Willkommen bei RETO ZAUGG, "+name+"!"
-      : "Willkommen bei RETO ZAUGG!"
+      ?"Willkommen bei RETO ZAUGG, "+name+"!"
+      :"Willkommen bei RETO ZAUGG!"
   );
 }
 
-function guardNavigation() {
-  const id=decodeURIComponent(
-    location.hash.slice(1)
-  );
+function guardNavigation(){
+  const id=decodeURIComponent(location.hash.slice(1));
 
-  if(
-    protectedIds.includes(id) &&
-    !isMember()
-  ) {
-    history.replaceState(
-      null,
-      "",
-      "#mitgliedschaft"
-    );
-
-    $("mitgliedschaft").scrollIntoView({
-      behavior:"smooth"
-    });
+  if(protectedIds.includes(id)&&!isMember()){
+    history.replaceState(null,"","#mitgliedschaft");
+    $("mitgliedschaft").scrollIntoView({behavior:"smooth"});
   }
 }
 
-window.addEventListener(
-  "hashchange",
-  guardNavigation
-);
+window.addEventListener("hashchange",guardNavigation);
 
 let pendingHealth=null;
 
-$("memberForm").addEventListener(
-  "submit",
-  e=>{
-    e.preventDefault();
+$("memberForm").addEventListener("submit",e=>{
+  e.preventDefault();
 
-    if(!e.currentTarget.reportValidity()) {
-      return;
-    }
+  if(!e.currentTarget.reportValidity())return;
 
-    const name=$("memberName").value.trim();
+  const name=$("memberName").value.trim();
+  if(!name)return;
 
-    if(!name)return;
+  if(!save("registered",true))return;
 
-    if(!save("registered",true))return;
+  save("memberName",name);
+  updateMemberAccess();
 
-    save("memberName",name);
-
-    updateMemberAccess();
-
-    if(pendingHealth) {
-      $("healthGate").classList.add("hidden");
-      showHealth(pendingHealth);
-    } else {
-      $("mitgliedschaft").scrollIntoView({
-        behavior:"smooth"
-      });
-    }
+  if(pendingHealth){
+    $("healthGate").classList.add("hidden");
+    showHealth(pendingHealth);
+  }else{
+    $("mitgliedschaft").scrollIntoView({behavior:"smooth"});
   }
-);
+});
 
-$("logoutButton").addEventListener(
-  "click",
-  ()=>{
-    localStorage.removeItem(KEY+"registered");
-    localStorage.removeItem(KEY+"memberName");
+$("logoutButton").addEventListener("click",()=>{
+  localStorage.removeItem(KEY+"registered");
+  localStorage.removeItem(KEY+"memberName");
 
-    pendingHealth=null;
+  pendingHealth=null;
+  $("healthResult").classList.add("hidden");
 
-    $("healthResult").classList.add("hidden");
+  updateMemberAccess();
 
-    updateMemberAccess();
-
-    history.replaceState(
-      null,
-      "",
-      "#mitgliedschaft"
-    );
-
-    $("mitgliedschaft").scrollIntoView({
-      behavior:"smooth"
-    });
-  }
-);
+  history.replaceState(null,"","#mitgliedschaft");
+  $("mitgliedschaft").scrollIntoView({behavior:"smooth"});
+});
 
 /* GESUNDHEITSCHECK */
 
-function calculateHealth() {
+function calculateHealth(){
   const age=Number($("age").value);
   const height=Number($("height").value);
   const weight=Number($("weight").value);
   const factor=Number($("activity").value);
 
   if(
-    age<18 || age>120 ||
-    height<100 || height>250 ||
-    weight<25 || weight>350
-  ) {
+    age<18||age>120||
+    height<100||height>250||
+    weight<25||weight>350
+  ){
     alert("Bitte überprüfe deine Angaben.");
     return null;
   }
@@ -1398,31 +1215,25 @@ function calculateHealth() {
     10*weight+
     6.25*height-
     5*age+
-    ($("sex").value==="male" ? 5 : -161);
+    ($("sex").value==="male"?5:-161);
 
-  return {
+  return{
     bmi:bmi.toFixed(1),
     calories:Math.round(base*factor),
     water:Math.round(weight*30)
   };
 }
 
-function showHealth(result) {
-  if(!result || !isMember())return;
+function showHealth(result){
+  if(!result||!isMember())return;
 
   const box=$("healthValues");
   box.replaceChildren();
 
   const values=[
     ["BMI",result.bmi],
-    [
-      "Geschätzter Energiebedarf",
-      result.calories+" kcal/Tag"
-    ],
-    [
-      "Grobe Flüssigkeitsorientierung",
-      result.water+" ml/Tag"
-    ]
+    ["Geschätzter Energiebedarf",result.calories+" kcal/Tag"],
+    ["Grobe Flüssigkeitsorientierung",result.water+" ml/Tag"]
   ];
 
   values.forEach(([label,value])=>{
@@ -1430,55 +1241,38 @@ function showHealth(result) {
     const strong=document.createElement("strong");
 
     strong.textContent=label+": ";
-
-    p.append(
-      strong,
-      document.createTextNode(value)
-    );
-
+    p.append(strong,document.createTextNode(value));
     box.appendChild(p);
   });
 
   const note=document.createElement("p");
   note.className="small";
-
   note.textContent=
-    "Die Werte sind allgemeine Schätzungen "+
-    "und keine Diagnose. Der tatsächliche "+
-    "Bedarf kann abweichen.";
+    "Die Werte sind allgemeine Schätzungen und keine Diagnose. "+
+    "Der tatsächliche Bedarf kann abweichen.";
 
   box.appendChild(note);
 
   $("healthGate").classList.add("hidden");
   $("healthResult").classList.remove("hidden");
-
-  $("healthResult").scrollIntoView({
-    behavior:"smooth"
-  });
+  $("healthResult").scrollIntoView({behavior:"smooth"});
 }
 
-$("healthForm").addEventListener(
-  "submit",
-  e=>{
-    e.preventDefault();
+$("healthForm").addEventListener("submit",e=>{
+  e.preventDefault();
 
-    pendingHealth=calculateHealth();
+  pendingHealth=calculateHealth();
+  if(!pendingHealth)return;
 
-    if(!pendingHealth)return;
+  $("healthResult").classList.add("hidden");
 
-    $("healthResult").classList.add("hidden");
-
-    if(isMember()) {
-      showHealth(pendingHealth);
-    } else {
-      $("healthGate").classList.remove("hidden");
-
-      $("healthGate").scrollIntoView({
-        behavior:"smooth"
-      });
-    }
+  if(isMember()){
+    showHealth(pendingHealth);
+  }else{
+    $("healthGate").classList.remove("hidden");
+    $("healthGate").scrollIntoView({behavior:"smooth"});
   }
-);
+});
 
 /* LEBENSKOMPASS */
 
@@ -1488,7 +1282,7 @@ $("healthForm").addEventListener(
   });
 });
 
-function renderHistory() {
+function renderHistory(){
   const entries=read("checkins",[]);
   const box=$("history");
 
@@ -1500,10 +1294,7 @@ function renderHistory() {
   );
 
   $("progressBar").style.width=
-    Math.min(
-      100,
-      entries.length/30*100
-    )+"%";
+    Math.min(100,entries.length/30*100)+"%";
 
   entries.slice(-10).reverse().forEach(entry=>{
     const p=document.createElement("p");
@@ -1518,102 +1309,71 @@ function renderHistory() {
   });
 }
 
-$("compassForm").addEventListener(
-  "submit",
-  e=>{
-    e.preventDefault();
+$("compassForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  if(!isMember())return;
 
-    if(!isMember())return;
+  const entry={
+    date:today(),
+    energy:Number($("energy").value),
+    stress:Number($("stress").value),
+    mood:Number($("mood").value),
+    sleep:Number($("sleep").value),
+    movement:Number($("movement").value),
+    notes:$("notes").value
+  };
 
-    const entry={
-      date:today(),
-      energy:Number($("energy").value),
-      stress:Number($("stress").value),
-      mood:Number($("mood").value),
-      sleep:Number($("sleep").value),
-      movement:Number($("movement").value),
-      notes:$("notes").value
-    };
+  if(
+    entry.sleep<0||entry.sleep>24||
+    entry.movement<0||entry.movement>1440
+  ){
+    alert("Bitte überprüfe Schlaf und Bewegung.");
+    return;
+  }
 
-    if(
-      entry.sleep<0 ||
-      entry.sleep>24 ||
-      entry.movement<0 ||
-      entry.movement>1440
-    ) {
-      alert(
-        "Bitte überprüfe Schlaf und Bewegung."
-      );
-      return;
-    }
+  const entries=read("checkins",[]);
+  const index=entries.findIndex(x=>x.date===entry.date);
 
-    const entries=read("checkins",[]);
+  if(index>=0){
+    entries[index]=entry;
+  }else{
+    entries.push(entry);
+  }
 
-    const index=entries.findIndex(
-      x=>x.date===entry.date
-    );
+  entries.sort((a,b)=>a.date.localeCompare(b.date));
 
-    if(index>=0) {
-      entries[index]=entry;
-    } else {
-      entries.push(entry);
-    }
+  if(!save("checkins",entries))return;
 
-    entries.sort(
-      (a,b)=>a.date.localeCompare(b.date)
-    );
+  let tip=
+    "Achte heute auf regelmässige Pausen und ausgewogene Mahlzeiten.";
 
-    if(!save("checkins",entries))return;
+  if(entry.stress>=7){
+    tip=
+      "Dein Stresswert ist hoch. Eine kurze Atemübung könnte dir guttun.";
+  }else if(entry.sleep<6){
+    tip=
+      "Du hast wenig geschlafen. Plane heute bewusst Erholung ein.";
+  }else if(entry.energy<=4){
+    tip=
+      "Deine Energie ist niedrig. Vielleicht tut dir ein ruhiger Spaziergang gut.";
+  }else if(entry.movement<15){
+    tip=
+      "Vielleicht findest du heute Zeit für etwas leichte Bewegung.";
+  }
 
-    let tip=
-      "Achte heute auf regelmässige Pausen "+
-      "und ausgewogene Mahlzeiten.";
+  setText("dailyTip","Dein Tagesimpuls: "+tip);
+  $("dailyTip").classList.remove("hidden");
 
-    if(entry.stress>=7) {
-      tip=
-        "Dein Stresswert ist hoch. "+
-        "Eine kurze Atemübung könnte dir guttun.";
-    } else if(entry.sleep<6) {
-      tip=
-        "Du hast wenig geschlafen. "+
-        "Plane heute bewusst Erholung ein.";
-    } else if(entry.energy<=4) {
-      tip=
-        "Deine Energie ist niedrig. "+
-        "Vielleicht tut dir ein ruhiger Spaziergang gut.";
-    } else if(entry.movement<15) {
-      tip=
-        "Vielleicht findest du heute Zeit "+
-        "für etwas leichte Bewegung.";
-    }
+  renderHistory();
+});
 
-    setText(
-      "dailyTip",
-      "Dein Tagesimpuls: "+tip
-    );
-
-    $("dailyTip").classList.remove("hidden");
-
+$("clearCompass").addEventListener("click",()=>{
+  if(confirm("Alle lokalen Lebenskompass-Einträge löschen?")){
+    localStorage.removeItem(KEY+"checkins");
+    $("dailyTip").classList.add("hidden");
     renderHistory();
   }
-);
-
-$("clearCompass").addEventListener(
-  "click",
-  ()=>{
-    if(
-      confirm(
-        "Alle lokalen Lebenskompass-Einträge löschen?"
-      )
-    ) {
-      localStorage.removeItem(KEY+"checkins");
-
-      $("dailyTip").classList.add("hidden");
-
-      renderHistory();
-    }
-  }
-);
+});
 
 /* ERNÄHRUNGSPLANER */
 
@@ -1640,125 +1400,94 @@ const meals={
   ]
 };
 
-$("mealButton").addEventListener(
-  "click",
-  ()=>{
-    if(!isMember())return;
+$("mealButton").addEventListener("click",()=>{
+  if(!isMember())return;
 
-    const box=$("mealResult");
+  const box=$("mealResult");
+  box.replaceChildren();
 
-    box.replaceChildren();
+  const ul=document.createElement("ul");
 
-    const ul=document.createElement("ul");
+  meals[$("diet").value].forEach(meal=>{
+    const li=document.createElement("li");
+    li.textContent=meal;
+    ul.appendChild(li);
+  });
 
-    meals[$("diet").value].forEach(meal=>{
-      const li=document.createElement("li");
-
-      li.textContent=meal;
-
-      ul.appendChild(li);
-    });
-
-    box.appendChild(ul);
-    box.classList.remove("hidden");
-  }
-);
+  box.appendChild(ul);
+  box.classList.remove("hidden");
+});
 
 /* MEDITATION */
 
 let breathTimer=null;
 
-$("breathButton").addEventListener(
-  "click",
-  ()=>{
-    if(!isMember())return;
+$("breathButton").addEventListener("click",()=>{
+  if(!isMember())return;
 
-    if(breathTimer) {
-      clearInterval(breathTimer);
-    }
+  if(breathTimer)clearInterval(breathTimer);
 
-    let seconds=0;
-    const total=60;
-    const box=$("breathText");
+  let seconds=0;
+  const total=60;
+  const box=$("breathText");
 
-    box.classList.remove("hidden");
+  box.classList.remove("hidden");
 
-    function update() {
-      if(seconds>=total) {
-        box.textContent=
-          "Die Übung ist beendet. "+
-          "Nimm dir einen Moment Zeit.";
-
-        clearInterval(breathTimer);
-        breathTimer=null;
-        return;
-      }
-
+  function update(){
+    if(seconds>=total){
       box.textContent=
-        (
-          seconds%10<4
-            ? "Atme ruhig ein"
-            : "Atme langsam aus"
-        )+
-        " · Noch "+(total-seconds)+" Sekunden";
+        "Die Übung ist beendet. Nimm dir einen Moment Zeit.";
 
-      seconds++;
+      clearInterval(breathTimer);
+      breathTimer=null;
+      return;
     }
 
-    update();
+    box.textContent=
+      (seconds%10<4?"Atme ruhig ein":"Atme langsam aus")+
+      " · Noch "+(total-seconds)+" Sekunden";
 
-    breathTimer=setInterval(update,1000);
+    seconds++;
   }
-);
 
-$("eveningButton").addEventListener(
-  "click",
-  ()=>{
-    if(!isMember())return;
+  update();
+  breathTimer=setInterval(update,1000);
+});
 
-    setText(
-      "eveningText",
-      "Lass den Tag langsam ausklingen. "+
-      "Lege dein Handy beiseite, atme ruhig "+
-      "und denke an einen schönen Moment des Tages."
-    );
+$("eveningButton").addEventListener("click",()=>{
+  if(!isMember())return;
 
-    $("eveningText").classList.remove("hidden");
-  }
-);
+  setText(
+    "eveningText",
+    "Lass den Tag langsam ausklingen. Lege dein Handy beiseite, "+
+    "atme ruhig und denke an einen schönen Moment des Tages."
+  );
+
+  $("eveningText").classList.remove("hidden");
+});
 
 /* COACHING */
 
-$("saveGoal").addEventListener(
-  "click",
-  ()=>{
-    if(!isMember())return;
+$("saveGoal").addEventListener("click",()=>{
+  if(!isMember())return;
 
-    const goal=$("goal").value.trim();
+  const goal=$("goal").value.trim();
 
-    if(goal && save("goal",goal)) {
-      setText(
-        "goalDisplay",
-        "Dein Ziel: "+goal
-      );
-    }
+  if(goal&&save("goal",goal)){
+    setText("goalDisplay","Dein Ziel: "+goal);
   }
-);
+});
 
 const savedGoal=read("goal","");
 
-if(savedGoal) {
+if(savedGoal){
   $("goal").value=savedGoal;
-
-  setText(
-    "goalDisplay",
-    "Dein Ziel: "+savedGoal
-  );
+  setText("goalDisplay","Dein Ziel: "+savedGoal);
 }
 
 /* CHALLENGES */
 
-function renderChallenge() {
+function renderChallenge(){
   const days=read("challengeDays",[]);
 
   setText(
@@ -1767,120 +1496,88 @@ function renderChallenge() {
   );
 
   $("challengeButton").disabled=
-    days.includes(today()) ||
-    days.length>=30;
+    days.includes(today())||days.length>=30;
 }
 
-$("challengeButton").addEventListener(
-  "click",
-  ()=>{
-    if(!isMember())return;
+$("challengeButton").addEventListener("click",()=>{
+  if(!isMember())return;
 
-    const days=read("challengeDays",[]);
+  const days=read("challengeDays",[]);
 
-    if(
-      !days.includes(today()) &&
-      days.length<30
-    ) {
-      days.push(today());
-
-      save("challengeDays",days);
-    }
-
-    renderChallenge();
+  if(!days.includes(today())&&days.length<30){
+    days.push(today());
+    save("challengeDays",days);
   }
-);
+
+  renderChallenge();
+});
 
 /* SPEAKER */
 
-$("speakButton").addEventListener(
-  "click",
-  ()=>{
-    if(!("speechSynthesis" in window)) {
-      alert(
-        "Dein Browser unterstützt keine Sprachausgabe."
-      );
-      return;
-    }
+$("speakButton").addEventListener("click",()=>{
+  if(!("speechSynthesis" in window)){
+    alert("Dein Browser unterstützt keine Sprachausgabe.");
+    return;
+  }
 
+  speechSynthesis.cancel();
+
+  const speech=new SpeechSynthesisUtterance(
+    $("speakerText").textContent
+  );
+
+  speech.lang="de-CH";
+  speech.rate=.95;
+
+  speechSynthesis.speak(speech);
+});
+
+$("stopSpeak").addEventListener("click",()=>{
+  if("speechSynthesis" in window){
     speechSynthesis.cancel();
-
-    const speech=new SpeechSynthesisUtterance(
-      $("speakerText").textContent
-    );
-
-    speech.lang="de-CH";
-    speech.rate=.95;
-
-    speechSynthesis.speak(speech);
   }
-);
-
-$("stopSpeak").addEventListener(
-  "click",
-  ()=>{
-    if("speechSynthesis" in window) {
-      speechSynthesis.cancel();
-    }
-  }
-);
+});
 
 /* KONTAKT */
 
-$("bookingForm").addEventListener(
-  "submit",
-  e=>{
-    e.preventDefault();
+$("bookingForm").addEventListener("submit",e=>{
+  e.preventDefault();
 
-    const request=
-      "Anfrage an RETO ZAUGG\n\n"+
-      "Name: "+$("bookName").value.trim()+"\n"+
-      "E-Mail: "+$("bookEmail").value.trim()+"\n"+
-      "Angebot: "+$("bookService").value+"\n\n"+
-      "Nachricht:\n"+
-      $("bookMessage").value.trim();
+  const request=
+    "Anfrage an RETO ZAUGG\n\n"+
+    "Name: "+$("bookName").value.trim()+"\n"+
+    "E-Mail: "+$("bookEmail").value.trim()+"\n"+
+    "Angebot: "+$("bookService").value+"\n\n"+
+    "Nachricht:\n"+$("bookMessage").value.trim();
 
-    $("bookingCopy").value=request;
+  $("bookingCopy").value=request;
+  $("bookingResult").classList.remove("hidden");
 
-    $("bookingResult").classList.remove("hidden");
+  $("bookingResult").scrollIntoView({behavior:"smooth"});
+});
 
-    $("bookingResult").scrollIntoView({
-      behavior:"smooth"
-    });
+$("copyBooking").addEventListener("click",async()=>{
+  try{
+    await navigator.clipboard.writeText(
+      $("bookingCopy").value
+    );
+    alert("Anfrage kopiert.");
+  }catch{
+    $("bookingCopy").focus();
+    $("bookingCopy").select();
+    alert("Bitte den markierten Text kopieren.");
   }
-);
+});
 
-$("copyBooking").addEventListener(
-  "click",
-  async()=>{
-    try {
-      await navigator.clipboard.writeText(
-        $("bookingCopy").value
-      );
+/* INITIALISIERUNG */
 
-      alert("Anfrage kopiert.");
-    } catch {
-      $("bookingCopy").focus();
-      $("bookingCopy").select();
-
-      alert(
-        "Bitte den markierten Text kopieren."
-      );
-    }
-  }
-);
-
-/* START */
-
-$("year").textContent=
-  new Date().getFullYear();
+$("year").textContent=new Date().getFullYear();
 
 updateMemberAccess();
 renderHistory();
 renderChallenge();
 
 setTimeout(guardNavigation,100);
-
 </script>
 
 </body>
