@@ -1,27 +1,9 @@
-RETO ERNÄHRUNGSBERATUNG – VERSION 3
-===================================
+RETO Website V3.1 – vereinter Lebenskompass
 
-INHALT
-- index.html – Startseite
-- epigenetik.html – Coaching-Informationen
-- lebenskompass.html + lebenskompass.js – täglicher Check-in
-- epigenetik-kompass.html – Reflexionsfragebogen
-- healthscore.html – Auswertung der Lebenskompass-Einträge
-- ernaehrungsplaner.html – Beispiel-Wochenplan (7 Tage, 3 Mahlzeiten/Tag)
-- einkaufsliste.html – Artikel abhaken und ergänzen
-- style.css, script.js, tools.js – Gestaltung und Logik
+Alle Dateien ins Hauptverzeichnis des GitHub-Repositorys laden und vorhandene gleichnamige Dateien ersetzen. Render: Static Site, Build Command echo "Static site ready", Publish Directory .
 
-GITHUB / RENDER
-1. ZIP entpacken. ALLE Dateien aus dem Ordner direkt ins Hauptverzeichnis des bestehenden GitHub-Repositories hochladen (alte Dateien mit gleichem Namen ersetzen).
-2. Änderungen committen.
-3. Render: Static Site, Build Command: echo "Static site ready", Publish Directory: .
-4. Automatischen Deploy abwarten, Seiten testen.
+Menü: nur noch Lebenskompass. Unter lebenskompass.html befinden sich Tages-Check-in, Epigenetik-Kompass und HealthScore auf einer Seite. Die alten Links epigenetik-kompass.html und healthscore.html leiten auf die jeweiligen Bereiche weiter.
 
-DATEN & DATENSCHUTZ
-Keine Datenbank, kein Backend, kein Login. Angaben werden ausschliesslich in localStorage des jeweiligen Browsers gespeichert. Keine geräteübergreifende Synchronisation oder Backups. Browserdaten löschen entfernt Einträge. Auf gemeinsam genutzten Geräten können andere Personen mit Browserzugriff diese Daten sehen. Keine sensiblen medizinischen Angaben erfassen. Google Fonts werden extern geladen; vor produktivem Einsatz Datenschutzhinweise und ggf. lokales Hosting der Schrift prüfen.
+Der HealthScore nutzt bei beiden vorhandenen Ergebnissen 50 % den neuesten Tages-Check-in und 50 % die Epigenetik-Reflexion. Fehlt eine Quelle, zeigt er den vorhandenen Wert mit Hinweis. Die Verlaufsbalken zeigen ausschliesslich Tages-Check-ins, da der Epigenetik-Kompass nur den letzten Stand speichert. Keine medizinische Diagnose.
 
-HINWEISE
-HealthScore = subjektiver Lifestyle-Index, keine medizinische Messung.
-Epigenetik-Kompass = Lebensstil-Reflexion, keine genetische Analyse.
-Ernährungspläne = einfache Musterrezepte, nicht individuell medizinisch validiert. Zutatenfilter ist keine Allergensicherheitsgarantie; Mengen sind grobe Richtwerte.
-Die Einkaufslisten-Übernahme addiert neue Einträge, bestehende Einträge bleiben erhalten.
+Daten bleiben im localStorage des Browsers; keine Datenbank, keine Synchronisierung. Bestehende gespeicherte Daten bleiben erhalten, da die Schlüssel unverändert sind.
